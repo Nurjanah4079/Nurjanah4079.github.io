@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title> Nurjanah - Portfolio Website </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/font-awesome.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Page Loader Strat-->
+  <div class="page-loader">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+  <!-- Page Loader End-->
+
+<!-- Background Circle Start -->
+<div class="bg-circles">
+  <div class="circle-1"></div>
+  <div class="circle-2"></div>
+  <div class="circle-3"></div>
+  <div class="circle-4"></div>
+</div>
+<!-- Background Circle End -->
+
+<!-- Overlay Start-->
+<div class="overlay">
+
+</div>
+<!-- Overlay End-->
+<!-- Main Start -->
+<div class="main hidden">
+
+  <!-- Header Start -->
+  <header class="header">
+    <div class="container">
+      <div class="row flex-end">
+        <button type="button" class="nav-toggler">
+          <span></span>
+        </button>
+        <nav class="nav">
+          <div class="nav-inner">
+            <ul>
+              <li><a href="#home" class="nav-item link-item">home</a></li>
+              <li><a href="#about" class="nav-item link-item">about</a></li>
+              <li><a href="#portfolio" class="nav-item link-item">portfolio</a></li>
+              <li><a href="#contact" class="nav-item link-item">contact</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!-- Header End -->
+
+  <!-- Home Section Start -->
+  <section class="home-section align-items-center" id="home"> 
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="home-text">
+          <p>Hello, I'm</p>
+          <h1>Nurjanah</h1>
+          <h2>Business Intelligence • Data Analyst • Data Engineer</h2>
+          <a href="#about" class="btn link-item">more about me</a>
+          <a href="#portfolio" class="btn link-item">portofolio</a>
+        </div>
+        <div class="home-img">
+          <div class="img-box">
+            <img src="img/myprofile-img.png" alt="image-png">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  </section>
+  <!-- Home Section End -->
+  <!-- About Section Start -->
+  <section class="about-section sec-padding" id="about">
+    <div class="container">
+      <div class="row">
+        <div class="section-title">
+          <h2>about me</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="about-img">
+          <div class="img-box">
+            <img src="img/myabout-img.png" alt="about img">
+          </div>
+        </div>
+        <div class="about-text">
+          <p>Informatics engineering fresh graduate with a passion for embracing technological challenges and innovation. Well-acquainted with python, SQL, Java and several more programming languages. Involved in projects related to Data Analysis and Data Warehousing. Additionally, I have experience in student organizations, worked as a lecturer assistant, completed a web developer internship, and participated in training programs as a data engineer and data analyst. I have great teamwork, resilience, and spirit.</p>
+          <div class="about-tabs">
+            <button type="button" class="tab-item active" data-target="#education"></button>
+            <button type="button" class="tab-item" data-target="#experience"></button>
+          </div>
+      
+          <a href="#contact" class="btn link-item">contact me</a>
+        </div>     
+      </div>
+    </div>
+  </section>
+  <!-- About Section End -->
+  <!-- Portofolio Section Start -->
+  <section class="portfolio-section sec-padding" id="portfolio">
+    <div class="container">
+      <div class="row">
+        <div class="section-title">
+          <h2>recent work</h2>
+        </div>
+      </div>
+      <div class="row">
+        <!-- Portfolio Item Start -->
+        <div class="portfolio-item">
+          <div class="portfolio-item-thumbnail">
+            <img src="img/portfolio/project-employee-presence-analysis.JPG" alt="portfolio item thumbnail">
+          </div>
+          <h3 class="portfolio-item-title">Employee Presence Analysis</h3>
+          <button type="button" class="btn view-project-btn">view project</button>
+          <div class="portfolio-item-details">
+            <div class="description">
+              <iframe title="HR Analytics - Employee Presence Analysis" width="100%" height="500"  src="https://app.powerbi.com/reportEmbed?reportId=21f0a782-3629-4224-8f77-907dcc30dfb0&autoAuth=true&ctid=3750697d-29e2-445d-afe9-19ea7c9da124" frameborder="0" allowFullScreen="true"></iframe>
+              <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum facilis quaerat labore recusandae aspernatur veniam asperiores cum. Ut commodi voluptates obcaecati? Eaque nulla fugiat voluptatum laudantium, tempore aspernatur soluta cum quis laborum obcaecati nisi sapiente dolorem neque, perferendis molestias minima hic quibusdam odio iste quod consequuntur explicabo facilis sed? Ducimus.</p> -->
+            </div>
+            <!-- <div class="general-info"> -->
+              <div class="description">
+                <h2>Background Case</h2>
+                <p>HR manager faces challenges in managing and understanding employee attendance data in his company. Previously, this process involved manual processing of complex and large Excel files, causing complexity and high time consumption. HR manager aims to enhance efficiency and understanding by adopting a data dashboard to analyze employee attendance, work-from-home trends, and sick leave percentages.</p>
+              </div>
+              <div class="description">
+                <h2>Source Data</h2>
+                <p>The primary data source is Excel file obtained from a dataset for employee attendance from a company named AtliQ. The data includes information on employee attendance, including attendance percentages, work-from-home habits, sick leave, and more.</p>
+              </div>
+              <div class="description">
+                <h2>Data Transformation</h2>
+                <ul>
+                  <li>Extracting relevant fields such as employee names, presence, work-from-home, and sick leave information for focused analysis.</li>
+                  <li>Integrating additional data points, including dates, days of the week, and specific employee details, to enhance the granularity of the dataset.</li>
+                  <li>Add calculated fields for metrics such as attendance percentage (presence, work-from-home, and sick leave), enabling a deeper understanding of employee attendance dynamics.</li>
+                  <li>Remove Week Off and etc to align the dataset with the calendar to accurately represent workdays and facilitate date-based analysis.</li>
+                </ul>
+              </div>
+              <div class="description">
+                <h2>Dashboard</h2>
+                <ul>
+                  <li>Importing Excel data into Power BI starts the visualization process.</li>
+                  <li>Insights into presence, work-from-home, and sick leave patterns are delivered through visual cards and tables.</li>
+                  <li>Create interactive line charts to represent presence, work-from-home and sick leave trends.</li>
+                  <li>Bar charts are used to visually depict the percentage of presence, work-from-home, and sick leave by day.</li>
+                  <li>Create a calculated month-over-month.</li>
+                  <li>Create filter.</li>
+                </ul>
+              </div>  
+              <div class="description">
+                <h2>Result</h2>
+                <ul>
+                  <li>Observe a decreasing trend in presence leading up to June.</li>
+                  <li>Observe a increasing trend in work-from-home and sick leave leading up to June.</li>
+                  <li>Highlighting employee presence based on specific days of the week, with Monday having the highest presence.</li>
+                  <li>Highlighting employee work-from-home on specific days of the week, with Friday having the highest work-from-home.</li>
+                  <li>Highlighting employee sick leave based on specific days of the week, with Monday having the highest sick leave.</li>
+                  <li>Sending notifications via email if presence falls below 80%.</li>
+                  <li>Automatic data updates, including notifications.</li>
+                </ul>
+              </div>  
+            <!-- </div> -->
+          </div>
+        </div>
+        <!-- Portfolio Item End -->
+        <!-- Portfolio Item Start -->
+        <div class="portfolio-item">
+          <div class="portfolio-item-thumbnail">
+            <img src="img/portfolio/project-ecommerce.JPG" alt="portfolio item thumbnail">
+          </div>
+          <h3 class="portfolio-item-title">Ecommerce Sales Dashboard</h3>
+          <button type="button" class="btn view-project-btn">view project</button>
+          <div class="portfolio-item-details">
+            <!-- <div class="description">
+              <iframe title="HR Analytics - Employee Presence Analysis" width="100%" height="500"  src="https://app.powerbi.com/reportEmbed?reportId=21f0a782-3629-4224-8f77-907dcc30dfb0&autoAuth=true&ctid=3750697d-29e2-445d-afe9-19ea7c9da124" frameborder="0" allowFullScreen="true"></iframe>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum facilis quaerat labore recusandae aspernatur veniam asperiores cum. Ut commodi voluptates obcaecati? Eaque nulla fugiat voluptatum laudantium, tempore aspernatur soluta cum quis laborum obcaecati nisi sapiente dolorem neque, perferendis molestias minima hic quibusdam odio iste quod consequuntur explicabo facilis sed? Ducimus.</p>
+            </div> -->
+            <!-- <div class="general-info"> -->
+              <!-- <div class="description">
+                <h2>Background Case</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum recusandae commodi ullam eveniet? Possimus, omnis cum est rem placeat maiores quisquam voluptate? Fugit, voluptate nisi ullam praesentium ipsa voluptatum fuga.</p>
+              </div>
+              <div class="description">
+                <h2>Source Data</h2>
+                <p>The primary data source is Excel file obtained from a dataset for employee attendance from a company named AtliQ. The data includes information on employee attendance, including attendance percentages, work-from-home habits, sick leave, and more.</p>
+              </div>
+              <div class="description">
+                <h2>Data Transformation</h2>
+                <ul>
+                  <li>Extracting relevant fields such as employee names, presence, work-from-home, and sick leave information for focused analysis.</li>
+                  <li>Integrating additional data points, including dates, days of the week, and specific employee details, to enhance the granularity of the dataset.</li>
+                  <li>Add calculated fields for metrics such as attendance percentage (presence, work-from-home, and sick leave), enabling a deeper understanding of employee attendance dynamics.</li>
+                  <li>Remove Week Off and etc to align the dataset with the calendar to accurately represent workdays and facilitate date-based analysis.</li>
+                </ul>
+              </div>
+              <div class="description">
+                <h2>Dashboard</h2>
+                <ul>
+                  <li>Importing Excel data into Power BI starts the visualization process.</li>
+                  <li>Insights into presence, work-from-home, and sick leave patterns are delivered through visual cards and tables.</li>
+                  <li>Create interactive line charts to represent presence, work-from-home and sick leave trends.</li>
+                  <li>Bar charts are used to visually depict the percentage of presence, work-from-home, and sick leave by day.</li>
+                  <li>Create a calculated month-over-month.</li>
+                  <li>Create filter.</li>
+                </ul>
+              </div>  
+              <div class="description">
+                <h2>Result</h2>
+                <ul>
+                  <li>Observe a decreasing trend in presence leading up to June.</li>
+                  <li>Observe a increasing trend in work-from-home and sick leave leading up to June.</li>
+                  <li>Highlighting employee presence based on specific days of the week, with Monday having the highest presence.</li>
+                  <li>Highlighting employee work-from-home on specific days of the week, with Friday having the highest work-from-home.</li>
+                  <li>Highlighting employee sick leave based on specific days of the week, with Monday having the highest sick leave.</li>
+                  <li>Sending notifications via email if presence falls below 80%.</li>
+                  <li>Automatic data updates, including notifications.</li>
+                </ul>
+              </div>   -->
+            <!-- </div> -->
+          </div>
+        </div>
+        <!-- Portfolio Item End -->
+        
+        <!-- Portfolio Item Start -->
+        <div class="portfolio-item">
+          <div class="portfolio-item-thumbnail">
+            <img src="img/portfolio/project-fns.JPG" alt="portfolio item thumbnail">
+          </div>
+          <h3 class="portfolio-item-title">Dashboard Online Transaction Fraud Detection</h3>
+          <button type="button" class="btn view-project-btn">view project</button>
+          <div class="portfolio-item-details">
+            <!-- <div class="description">
+              <iframe title="HR Analytics - Employee Presence Analysis" width="100%" height="500"  src="https://app.powerbi.com/reportEmbed?reportId=21f0a782-3629-4224-8f77-907dcc30dfb0&autoAuth=true&ctid=3750697d-29e2-445d-afe9-19ea7c9da124" frameborder="0" allowFullScreen="true"></iframe>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum facilis quaerat labore recusandae aspernatur veniam asperiores cum. Ut commodi voluptates obcaecati? Eaque nulla fugiat voluptatum laudantium, tempore aspernatur soluta cum quis laborum obcaecati nisi sapiente dolorem neque, perferendis molestias minima hic quibusdam odio iste quod consequuntur explicabo facilis sed? Ducimus.</p>
+            </div> -->
+            <!-- <div class="general-info"> -->
+              <!-- <div class="description">
+                <h2>Background Case</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum recusandae commodi ullam eveniet? Possimus, omnis cum est rem placeat maiores quisquam voluptate? Fugit, voluptate nisi ullam praesentium ipsa voluptatum fuga.</p>
+              </div>
+              <div class="description">
+                <h2>Source Data</h2>
+                <p>The primary data source is Excel file obtained from a dataset for employee attendance from a company named AtliQ. The data includes information on employee attendance, including attendance percentages, work-from-home habits, sick leave, and more.</p>
+              </div>
+              <div class="description">
+                <h2>Data Transformation</h2>
+                <ul>
+                  <li>Extracting relevant fields such as employee names, presence, work-from-home, and sick leave information for focused analysis.</li>
+                  <li>Integrating additional data points, including dates, days of the week, and specific employee details, to enhance the granularity of the dataset.</li>
+                  <li>Add calculated fields for metrics such as attendance percentage (presence, work-from-home, and sick leave), enabling a deeper understanding of employee attendance dynamics.</li>
+                  <li>Remove Week Off and etc to align the dataset with the calendar to accurately represent workdays and facilitate date-based analysis.</li>
+                </ul>
+              </div>
+              <div class="description">
+                <h2>Dashboard</h2>
+                <ul>
+                  <li>Importing Excel data into Power BI starts the visualization process.</li>
+                  <li>Insights into presence, work-from-home, and sick leave patterns are delivered through visual cards and tables.</li>
+                  <li>Create interactive line charts to represent presence, work-from-home and sick leave trends.</li>
+                  <li>Bar charts are used to visually depict the percentage of presence, work-from-home, and sick leave by day.</li>
+                  <li>Create a calculated month-over-month.</li>
+                  <li>Create filter.</li>
+                </ul>
+              </div>  
+              <div class="description">
+                <h2>Result</h2>
+                <ul>
+                  <li>Observe a decreasing trend in presence leading up to June.</li>
+                  <li>Observe a increasing trend in work-from-home and sick leave leading up to June.</li>
+                  <li>Highlighting employee presence based on specific days of the week, with Monday having the highest presence.</li>
+                  <li>Highlighting employee work-from-home on specific days of the week, with Friday having the highest work-from-home.</li>
+                  <li>Highlighting employee sick leave based on specific days of the week, with Monday having the highest sick leave.</li>
+                  <li>Sending notifications via email if presence falls below 80%.</li>
+                  <li>Automatic data updates, including notifications.</li>
+                </ul>
+              </div>   -->
+              <div class="description">
+                <span><a href="https://lookerstudio.google.com/s/rM3bZrSawng">Link Dashboard</a></span>
+              </div>
+            <!-- </div> -->
+          </div>
+        </div>
+        <!-- Portfolio Item End -->
+        <!-- Portfolio Item Start -->
+        <div class="portfolio-item">
+          <div class="portfolio-item-thumbnail">
+            <img src="img/portfolio/project-yellow-taxi.JPG" alt="portfolio item thumbnail">
+          </div>
+          <h3 class="portfolio-item-title">Dashboard Yellow Taxi Trip</h3>
+          <button type="button" class="btn view-project-btn">view project</button>
+          <div class="portfolio-item-details">
+            <!-- <div class="description">
+              <iframe title="HR Analytics - Employee Presence Analysis" width="100%" height="500"  src="https://app.powerbi.com/reportEmbed?reportId=21f0a782-3629-4224-8f77-907dcc30dfb0&autoAuth=true&ctid=3750697d-29e2-445d-afe9-19ea7c9da124" frameborder="0" allowFullScreen="true"></iframe>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum facilis quaerat labore recusandae aspernatur veniam asperiores cum. Ut commodi voluptates obcaecati? Eaque nulla fugiat voluptatum laudantium, tempore aspernatur soluta cum quis laborum obcaecati nisi sapiente dolorem neque, perferendis molestias minima hic quibusdam odio iste quod consequuntur explicabo facilis sed? Ducimus.</p>
+            </div> -->
+            <!-- <div class="general-info"> -->
+              <!-- <div class="description">
+                <h2>Background Case</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum recusandae commodi ullam eveniet? Possimus, omnis cum est rem placeat maiores quisquam voluptate? Fugit, voluptate nisi ullam praesentium ipsa voluptatum fuga.</p>
+              </div>
+              <div class="description">
+                <h2>Source Data</h2>
+                <p>The primary data source is Excel file obtained from a dataset for employee attendance from a company named AtliQ. The data includes information on employee attendance, including attendance percentages, work-from-home habits, sick leave, and more.</p>
+              </div>
+              <div class="description">
+                <h2>Data Transformation</h2>
+                <ul>
+                  <li>Extracting relevant fields such as employee names, presence, work-from-home, and sick leave information for focused analysis.</li>
+                  <li>Integrating additional data points, including dates, days of the week, and specific employee details, to enhance the granularity of the dataset.</li>
+                  <li>Add calculated fields for metrics such as attendance percentage (presence, work-from-home, and sick leave), enabling a deeper understanding of employee attendance dynamics.</li>
+                  <li>Remove Week Off and etc to align the dataset with the calendar to accurately represent workdays and facilitate date-based analysis.</li>
+                </ul>
+              </div>
+              <div class="description">
+                <h2>Dashboard</h2>
+                <ul>
+                  <li>Importing Excel data into Power BI starts the visualization process.</li>
+                  <li>Insights into presence, work-from-home, and sick leave patterns are delivered through visual cards and tables.</li>
+                  <li>Create interactive line charts to represent presence, work-from-home and sick leave trends.</li>
+                  <li>Bar charts are used to visually depict the percentage of presence, work-from-home, and sick leave by day.</li>
+                  <li>Create a calculated month-over-month.</li>
+                  <li>Create filter.</li>
+                </ul>
+              </div>  
+              <div class="description">
+                <h2>Result</h2>
+                <ul>
+                  <li>Observe a decreasing trend in presence leading up to June.</li>
+                  <li>Observe a increasing trend in work-from-home and sick leave leading up to June.</li>
+                  <li>Highlighting employee presence based on specific days of the week, with Monday having the highest presence.</li>
+                  <li>Highlighting employee work-from-home on specific days of the week, with Friday having the highest work-from-home.</li>
+                  <li>Highlighting employee sick leave based on specific days of the week, with Monday having the highest sick leave.</li>
+                  <li>Sending notifications via email if presence falls below 80%.</li>
+                  <li>Automatic data updates, including notifications.</li>
+                </ul>
+              </div>   -->
+              <div class="description">
+                <span><a href="https://datastudio.google.com/s/gQkqJGgqE9I">Link Dashboard</a></span>
+              </div>
+            <!-- </div> -->
+          </div>
+        </div>
+        <!-- Portfolio Item End -->
+
+
+
+    </div>
+  </section>
+  <!-- Portofolio Section End -->
+
+  <!-- Contact Section Start -->
+  <section class="contact-section sec-padding" id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="section-title">
+          <h2>contact me</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="contact-info">
+          <div class="contact-info-item">
+            <h3>Email</h3>
+            <p>nrjanah889@gmail.com</p>
+          </div>
+          <div class="contact-info-item">
+            <h3>find me</h3>
+            <div class="social-links">
+              <a href="https://www.linkedin.com/in/nurjanaah/" target="_blank"><i class="fab fa-linkedin"></i></a>
+              <a href="https://github.com/Nurjanah4079" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="https://www.youtube.com/channel/UC0bl5p7CH7iLQjXWE_UVz9Q" target="_blank"><i class="fab fa-youtube"></i></a>          
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Contact Section End -->
+
+</div>
+
+<!-- Main End --> 
+
+<!-- Portfolio Item Details Popup Start -->
+<div class="portfolio-popup">
+  <div class="pp-inner">
+    <div class="pp-content">
+      <div class="pp-header">
+        <button type="button" class="btn pp-close"><i class="fas fa-times"></i></button>
+        <div class="pp-thumbnail">
+          <img src="img/portfolio/3.jpg" alt="pp-thumbnail">
+        </div>
+        <h3></h3>
+        <h5></h5>
+      </div>
+      <div class="pp-body">
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Portfolio Item Details Popup End -->
+
+
+<script src="js/script.js"></script>
+</body>
+</html>
