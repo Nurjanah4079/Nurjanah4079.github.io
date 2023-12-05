@@ -6,17 +6,6 @@ Fonts
 Global Setting ungu 722BF5 dark 18171D blue 153AEC
 ----------------------------*/
 :root{
-    /* --main-color: #e02f6b;
-    --blue: #0000ff;
-    --blue-dark: #18293c;
-    --orange: #ffa500;
-    --green-yellow: #cddc39;
-    --pink-light: #efa2b4;
-    --cyan-light: #aef1ee;
-    --white: #ffffff;
-    --white-alpha-40: rgba(255, 255, 255, 0.40);
-    --white-alpha-25: rgba(255, 255, 255, 0.25);
-    --backdrop-filter-blur: blur(5px); */
     --main-color: #ff0072;
     --blue: #153AEC;
     --blue-dark: #ff0072;
@@ -677,6 +666,8 @@ Portfolio Section
 .portfolio-item{
     width: calc((100% / 3) - 30px);
     margin: 0 15px 30px;
+    /* height: 300px; */
+   
     
 }
 .portfolio-item-thumbnail{
@@ -693,6 +684,14 @@ Portfolio Section
     font-size: 20px;
     text-transform: capitalize;
     margin: 20px 0;
+
+}
+.portfolio-item h4{
+    /* font-size: 20px; */
+    text-transform: capitalize;
+    /* height: 50vh; */
+    margin: 20px 0;
+    
 
 }
 .portfolio-item-details{
