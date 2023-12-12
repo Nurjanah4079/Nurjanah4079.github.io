@@ -14,8 +14,8 @@ Global Setting ungu 722BF5 dark 18171D blue 153AEC
     --pink-light: #efa2b4;
     --cyan-light: #aef1ee;
     --white: #ffffff;
-    --white-alpha-40: rgba(255, 255, 255, 0.056);
-    --white-alpha-25: rgba(255, 255, 255, 0.034);
+    --white-alpha-40: rgba(255, 255, 255, 0.150);
+    --white-alpha-25: rgba(255, 255, 255, 0.054);
     --backdrop-filter-blur: blur(5px);
     --background-dark: #18171D;
 }
@@ -150,6 +150,7 @@ button{
 .btn{
     line-height: 1.5;
     background-color: var(--white-alpha-25);
+    /* background-image: linear-gradient(to bottom right, var(--main-color), var(--orange)); */
     border: 1px solid var(--white-alpha-40);
     padding: 10px 28px;
     display: inline-block;
@@ -238,39 +239,43 @@ button{
     position: absolute;
     border-radius: 50%;
 }
-.bg-circles .circle-1{
+.bg-circles .circle-1 {
     height: 60px;
     width: 60px;
     background-color: var(--blue);
     left: 5%;
     top: 10%;
     opacity: 0.4;
+    box-shadow: 0 0 20px 10px var(--blue), 0 0 40px 20px var(--blue), 0 0 60px 30px var(--blue);
     animation: zoomInOut 8s linear infinite;
 }
-.bg-circles .circle-2{
+.bg-circles .circle-2 {
     height: 80px;
     width: 80px;
     background-color: var(--main-color);
-    left: 30%;
-    top: 50%;
+    left: 38%;
+    top: 32%;
     opacity: 0.4;
+    box-shadow: 0 0 20px 10px var(--main-color), 0 0 40px 20px var(--main-color), 0 0 60px 30px var(--main-color);
     animation: bounceTop 5s ease-in-out infinite;
 }
-.bg-circles .circle-3{
+.bg-circles .circle-3 {
     height: 120px;
     width: 120px;
     background-color: var(--white);
     top: 40%;
     right: -60px;
     opacity: 0.6;
+    box-shadow: 0 0 20px 10px var(--white), 0 0 40px 20px var(--white), 0 0 60px 30px var(--white);
 }
-.bg-circles .circle-4{
+.bg-circles .circle-4 {
     height: 50px;
     width: 50px;
     background-color: var(--orange);
     top: 80%;
     left: -30px;
     opacity: 0.6;
+    box-shadow: 0 0 20px 10px var(--orange), 0 0 40px 20px var(--orange), 0 0 60px 30px var(--orange);
     animation: bounceTop 5s ease-in-out infinite;
 }
 /* -----------------------
@@ -490,6 +495,7 @@ Home Section
 }
 .home-text p{
     font-size: 18px;
+    margin-top: 20px;
 }
 .home-text h1{
     font-size: 50px;
@@ -510,6 +516,7 @@ Home Section
     border-radius: 50%;
     border: 8px solid var(--white-alpha-25);
     margin: auto;
+    box-shadow: 0 0 10px 5px var(--main-color), 0 0 20px 10px var(--main-color), 0 0 30px 15px var(--main-color);
 }
 .home-img .img-box img{
     width: 100%;
@@ -663,12 +670,13 @@ Portfolio Section
 .portfolio-section{
     padding-bottom: 50px;
 }
-.portfolio-item{
+.portfolio-item {
     width: calc((100% / 3) - 30px);
     margin: 0 15px 30px;
-    /* height: 300px; */
-   
-    
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
 }
 .portfolio-item-thumbnail{
     padding: 10px;
@@ -679,6 +687,14 @@ Portfolio Section
 .portfolio-item-thumbnail img{
     width: 100%;
     border-radius: 10px;
+}
+.portfolio-item-title {
+    text-transform: capitalize;
+    margin: auto 0; 
+    max-heigflow: hidden;
+    ht: 60px;
+    overtext-overflow: ellipsis;
+    line-height: 20px;
 }
 .portfolio-item h3{
     font-size: 20px;
@@ -694,11 +710,22 @@ Portfolio Section
     
 
 }
-.portfolio-item-details{
+.portfolio-item-details {
     display: none;
-    font-weight: 50;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    text-align: center;
 }
 
+.view-project-btn {
+    margin-top: auto; 
+}
 /* Portfolio Popup */
 .portfolio-popup{
     position: fixed;
@@ -748,8 +775,8 @@ Portfolio Section
     align-items: center;
     justify-content: center;
     position: absolute;
-    right: -40px;
-    top: -40px;
+    right: -28px;
+    top: -50px;
 }
 .pp-thumbnail img{
     border-radius: 10px;
@@ -790,7 +817,19 @@ Portfolio Section
     text-transform: lowercase;
     color: var(--main-color);
 }
-
+.pp-body .description .tools img{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    /* background-color: var(--white-alpha-25);
+    border: 1px solid var(--white-alpha-40); */
+    color: var(--main-color);
+    /* border-radius: 50%; */
+    margin: 6px 4px 0 0;
+    transition: all 0.3s ease;
+}
 /* contact section */
 .contact-form,
 .contact-info{
@@ -934,6 +973,6 @@ Portfolio Section
         font-size: 20px;
     }
     .portfolio-section{
-        padding-left: 50%;
+        padding-left: 20%;
     }
 }
