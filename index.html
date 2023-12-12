@@ -6,29 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/font-awesome.css">
   <link rel="stylesheet" href="css/style.css">
-  <style>
-    body {
-        margin: 0;
-        overflow: hidden;
-        background-color: #111;
-    }
-
-    .star {
-    position: absolute;
-    width: 2px;
-    height: 2px;
-    background-color: #fff;
-    border-radius: 50%;
-    transform: translateX(-50%);
-    animation: twinkling linear infinite;
-    z-index: 0; /* Menetapkan z-index untuk bintang */
-    }
-
-    @keyframes twinkling {
-        0%, 100% { opacity: 0; }
-        5%, 95% { opacity: 1; }
-    }
-</style>
 </head>
 <body>
   <!-- Page Loader Strat-->
@@ -422,24 +399,6 @@
   </div>
 </div>
 <!-- Portfolio Item Details Popup End -->
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-      const numStars = 100; // Ganti dengan jumlah bintang yang diinginkan
-
-      for (let i = 0; i < numStars; i++) {
-          createStar();
-      }
-
-      function createStar() {
-          const star = document.createElement("div");
-          star.className = "star";
-          star.style.top = `${Math.random() * 100}vh`;
-          star.style.left = `${Math.random() * 100}vw`;
-          star.style.animationDuration = `${Math.random() * 4 + 1}s`; // Durasi antara 1 hingga 5 detik
-          document.body.appendChild(star);
-      }
-  });
-</script>
 
 <script src="js/script.js"></script>
 </body>
