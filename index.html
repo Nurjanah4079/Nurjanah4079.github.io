@@ -6,6 +6,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/font-awesome.css">
   <link rel="stylesheet" href="css/style.css">
+  <!-- <style>
+    body {
+        margin: 0;
+        overflow: hidden;
+        background-color: #111;
+    }
+
+    .star {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background-color: #fff;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    animation: twinkling linear infinite;
+    z-index: 0; /* Menetapkan z-index untuk bintang */
+    }
+
+    @keyframes twinkling {
+        0%, 100% { opacity: 0; }
+        5%, 95% { opacity: 1; }
+    }
+</style> -->
 </head>
 <body>
   <!-- Page Loader Strat-->
@@ -116,14 +139,98 @@
         <!-- Portfolio Item Start -->
         <div class="portfolio-item">
           <div class="portfolio-item-thumbnail">
+            <img src="img/portfolio/Adventureworks-Sales.JPG" alt="portfolio item thumbnail">
+          </div>
+          <h4 class="portfolio-item-title">AdventureWorks Sales</h4>
+          <button type="button" class="btn view-project-btn">view project</button>
+          <div class="portfolio-item-details">
+            <div class="description">
+              <!-- <img src="img/portfolio/project-employee-presence-analysis.JPG" alt="portfolio item thumbnail"> -->
+            </div>
+    
+            <!-- <div class="general-info"> -->
+              <div class="description">
+                <iframe title="AdventureWorks" width="845" height="450" src="https://app.powerbi.com/view?r=eyJrIjoiZWExNmQ1ZTItM2ZiNi00OTgzLWIxNDEtNmQ0ZGQ0MTA0NjJkIiwidCI6IjM3NTA2OTdkLTI5ZTItNDQ1ZC1hZmU5LTE5ZWE3YzlkYTEyNCIsImMiOjEwfQ%3D%3D&embedImagePlaceholder=true" frameborder="0" allowFullScreen="true"></iframe>
+              </div> 
+              <div class="description">
+                <span><a href="https://github.com/Nurjanah4079/dashboard-yellow-taxi-trip-2019">Link Report</a></span>
+              </div>
+              <div class="description">
+                <h2>Introduction</h2>
+                <p>This project is an interactive report created using Power BI to analyze and visualize sales data from AdventureWorks. AdventureWorks is a fictional company often used for training and demonstrating business analytics software. This report is designed to help stakeholders understand various aspects of the company's sales, from a high-level summary to detailed analyses based on different criteria. The report is divided into four first menus, each containing several second menus, providing a comprehensive and interactive view of sales data.</p>
+              </div>
+              <div class="description">
+                <h2>Menu Sales</h2>
+                <p>This menu provides information and analysis related to overall sales. It contains four sub-menus:</p>
+                <ul>
+                  <li>Sales Summary: Presents a summary of sales, including total sales, number of transactions, and key performance metrics. This visualization offers an overview of overall sales performance.</li>
+                  <li>Sales Calendar/Sales Heatmap: Displays sales by calendar, using a heatmap to show daily, weekly, or monthly sales patterns. This helps identify seasonal trends and peak or low sales days.</li>
+                  <li>Trend Analysis: Provides trend analysis of sales over time. This visualization helps understand how sales have changed over time and identify significant patterns or trends.</li>
+                  <li>YoY Analysis (Year-over-Year): Compares the current year's sales performance with previous years. This analysis is useful for seeing year-over-year growth or decline in sales.</li>
+                </ul>
+              </div>
+              <div class="description">
+
+              </div>
+              <div class="description">
+                <h2>Menu Product</h2>
+                <p>This menu focuses on sales analysis based on products. It contains three sub-menus:</p>
+                <ul>
+                  <li>Pareto Analysis: Utilizes the Pareto Principle to identify the products that contribute the most to total sales. This analysis helps determine which products are most important to focus on.</li>
+                  <li>Correlation: Analyzes the correlation between various products and other factors influencing sales. This visualization helps understand the relationships between products and other variables.</li>
+                  <li>Remove Week Off and etc to align the dataset with the calendar to accurately represent workdays and facilitate date-based analysis.</li>
+                </ul>
+              </div>
+              <div class="description">
+                <h2>Menu Internet</h2>
+                <p>This menu analyzes sales data conducted through internet channels. It contains four sub-menus:</p>
+                <ul>
+                  <li>RFM Analysis (Recency, Frequency, Monetary): Analyzes customer behavior based on how recently they made a purchase (Recency), how often they purchase (Frequency), and how much they spend (Monetary). This analysis helps in customer segmentation and planning more effective marketing campaigns.                  </li>
+                  <li>Decomposition: Provides decomposition analysis of sales to understand the contribution of various factors such as seasonality, trends, and noise. This helps separate the factors influencing sales.</li>
+                  <li>Maps: Displays sales based on geographic location. This visualization helps understand the geographical distribution of sales and identify high or low-performing areas.</li>
+                  <li>Customer Inquiry: Provides a tool for querying customer data based on specific criteria. This allows for deeper analysis of customer behavior and preferences.</li>
+                </ul>
+              </div>
+              <div class="description">
+                <h2>Menu Reseller</h2>
+                <p>This menu focuses on sales analysis based on products. It contains three sub-menus:</p>
+                <ul>
+                  <li>P/L Analysis (Profit and Loss Analysis): Analyzes the profit and loss from sales conducted through resellers. This helps understand the contribution of resellers to the company's profits.</li>
+                  <li>Maps: Displays reseller sales based on geographic location. This visualization helps understand the distribution of resellers and their performance in various regions.</li>
+                  <li>Reseller Inquiry: Provides a tool for querying reseller data based on specific criteria. This allows for deeper analysis of reseller performance and business relationships.</li>
+                </ul>
+              </div>
+              <div class="description">
+                <h2>Project Objectives</h2>
+                <p>The goal of this project is to provide in-depth and easily understandable insights into AdventureWorks' sales through various visualizations and analyses. With this interactive report, users can:</p>
+                <ul>
+                  <li>Understand overall and detailed sales performance based on time, product, sales channel, and resellers.</li>
+                  <li>Identify trends, patterns, and anomalies in sales data.</li>
+                  <li>Determine the most profitable products and geographical areas.</li>
+                  <li>Analyze customer and reseller behavior for better decision-making.</li>
+                  <li>Assist management in planning more effective marketing and sales strategies.</li>
+                </ul><br>
+              </div> 
+              <!-- <div class="description">
+                <iframe title="AdventureWorks" width="845" height="450" src="https://app.powerbi.com/view?r=eyJrIjoiZWExNmQ1ZTItM2ZiNi00OTgzLWIxNDEtNmQ0ZGQ0MTA0NjJkIiwidCI6IjM3NTA2OTdkLTI5ZTItNDQ1ZC1hZmU5LTE5ZWE3YzlkYTEyNCIsImMiOjEwfQ%3D%3D&embedImagePlaceholder=true" frameborder="0" allowFullScreen="true"></iframe>
+              </div>  -->
+            <!-- </div> -->
+          </div>
+        </div>
+        <!-- Portfolio Item End -->
+        <!-- Portfolio Item Start -->
+        <div class="portfolio-item">
+          <div class="portfolio-item-thumbnail">
             <img src="img/portfolio/project-employee-presence-analysis.JPG" alt="portfolio item thumbnail">
           </div>
           <h4 class="portfolio-item-title">Employee Presence Analysis</h4>
           <button type="button" class="btn view-project-btn">view project</button>
           <div class="portfolio-item-details">
             <div class="description">
-              <img src="img/portfolio/project-employee-presence-analysis.JPG" alt="portfolio item thumbnail">
-            </div>
+              <!-- <iframe title="HR Analytics - Employee Presence Analysis" width="845" height="450" src="https://app.powerbi.com/view?r=eyJrIjoiZmQ3ZWVhNWUtMzA1Ny00NGU5LWIxMDktZWVhYmE2ZDg4MmZkIiwidCI6IjM3NTA2OTdkLTI5ZTItNDQ1ZC1hZmU5LTE5ZWE3YzlkYTEyNCIsImMiOjEwfQ%3D%3D&embedImagePlaceholder=true" frameborder="0" allowFullScreen="true"></iframe> -->
+              <iframe title="HR Analytics - Employee Presence Analysis" width="845" height="450" src="https://app.powerbi.com/view?r=eyJrIjoiZTUxMDQwOGQtOTRlNi00Y2FlLTgxMWYtMDRjMWMwOGRhNTE0IiwidCI6IjM3NTA2OTdkLTI5ZTItNDQ1ZC1hZmU5LTE5ZWE3YzlkYTEyNCIsImMiOjEwfQ%3D%3D" frameborder="0" allowFullScreen="true"></iframe>
+              <!-- <iframe title="HR Analytics - Employee Presence Analysis" width="845" height="450" src="https://app.powerbi.com/view?r=eyJrIjoiZmQ3ZWVhNWUtMzA1Ny00NGU5LWIxMDktZWVhYmE2ZDg4MmZkIiwidCI6IjM3NTA2OTdkLTI5ZTItNDQ1ZC1hZmU5LTE5ZWE3YzlkYTEyNCIsImMiOjEwfQ%3D%3D&embedImagePlaceholder=true" frameborder="0" allowFullScreen="true"></iframe> -->
+            </div> 
     
             <!-- <div class="general-info"> -->
               <div class="description">
@@ -168,9 +275,6 @@
                 </ul><br>
               </div> 
               <div class="description">
-                <iframe title="HR Analytics - Employee Presence Analysis" width="100%" height="500"  src="https://app.powerbi.com/reportEmbed?reportId=21f0a782-3629-4224-8f77-907dcc30dfb0&autoAuth=true&ctid=3750697d-29e2-445d-afe9-19ea7c9da124" frameborder="0" allowFullScreen="true"></iframe>
-              </div> 
-              <div class="description">
                 <h2>Automated Notifications and Updates</h2>
                 <ul>
                   <li>Implement a system to send email notifications if the presence falls below 80%</li>
@@ -201,6 +305,32 @@
           </div>
         </div>
         <!-- Portfolio Item End -->
+         <!-- Portfolio Item Start -->
+        <div class="portfolio-item">
+          <div class="portfolio-item-thumbnail">
+            <img src="img/portfolio/Global-Economic-Indicator.JPG" alt="portfolio item thumbnail">
+          </div>
+          <h4 class="portfolio-item-title">Global Economic Indicator</h4>
+          <button type="button" class="btn view-project-btn">view project</button>
+          <div class="portfolio-item-details">
+            <div class="description">
+              <iframe title="Global Economic Indicator" width="845" height="450" src="https://app.powerbi.com/view?r=eyJrIjoiM2QyZmRkMjItN2ZmMS00MjQ3LTkxNTEtZDVhODJhNTZlMjU3IiwidCI6IjM3NTA2OTdkLTI5ZTItNDQ1ZC1hZmU5LTE5ZWE3YzlkYTEyNCIsImMiOjEwfQ%3D%3D" frameborder="0" allowFullScreen="true"></iframe>
+            </div> 
+            <div class="description">
+                <h2>Introduction</h2>
+                <p>The Global Economic Indicator Dashboard is an interactive data visualization project that provides a comprehensive overview of the world's economic landscape. This dashboard aims to facilitate informed decision-making by presenting key economic indicators, such as GDP, population growth, and regional economic performance.</p>
+              </div>
+            <div class="description">
+                <h2>Project Objectives</h2>
+                <ul>
+                  <li>To design an interactive and user-friendly dashboard that enables users to explore and analyze global economic data with ease.</li>
+                  <li>To provide a comprehensive overview of global economic indicators, including GDP, population growth, and regional economic performance.</li>
+                  <li>To enable users to identify trends and patterns in global economic data, facilitating informed decision-making.</li>
+                  <li>To offer a customizable and flexible platform that allows users to select specific countries, regions, or indicators for in-depth analysis.</li>
+              </div>  
+          </div>
+        </div>
+        <!-- Portfolio Item End -->
         <!-- Portfolio Item Start -->
         <div class="portfolio-item">
           <div class="portfolio-item-thumbnail">
@@ -209,24 +339,25 @@
           <h4 class="portfolio-item-title">Ecommerce Sales Dashboard</h4>
           <button type="button" class="btn view-project-btn">view project</button>
           <div class="portfolio-item-details">
-            <img src="img/portfolio/project-ecommerce.JPG" alt="portfolio item thumbnail">
             <div class="description">
-                <h2>Problem Statement</h2>
-                <p>User want us to create a Sales Dashboard showing information of YTD Sales and generate insight for below scenarios</p>
-                <ul>
-                  <li>Create a KPI Banner showing YTD Sales, YTD Profit, YTD Quantity sold, YTD Profit Margin</li>
-                  <li>Find Year on Year growth for each KPI and show a YTD sparkline for each measure in the KPI to understand the monthly trend for each fact</li>
-                  <li>Find YTD Sales, PYTD Sales, YoY Sales growth for diffreent customer category, Add a trend icon for each State</li>
-                  <li>Find YTD Sales Performance by each State</li>
-                  <li>Top 5 and Botton 5 Product by Sales</li>
-                  <li>YTD Sales by Revenue know best and worst performing region all over country</li>
-                  <li>YTD Sales by Shipping Type to get the best shipping type percentage/li>
-                </ul>
-              </div>
+              <iframe title="Ecommerce"width="845" height="450" src="https://app.powerbi.com/view?r=eyJrIjoiOGM0MGFjMjMtMjIyNy00ZTRkLWI3MzQtOTlmMGVkNTNhYTYzIiwidCI6IjM3NTA2OTdkLTI5ZTItNDQ1ZC1hZmU5LTE5ZWE3YzlkYTEyNCIsImMiOjEwfQ%3D%3D" frameborder="0" allowFullScreen="true"></iframe>
+           </div> 
+          <!-- </div>  -->
+          <div class="description">
+              <h2>Introduction</h2>
+              <p>This dashboard is designed to provide a comprehensive overview of key business metrics for an ecommerce business. The dashboard is organized into several categories, including Sales Performance, Sales by Category, Sales by State, Top 5 Products by YTD Sales, Button 5 Products by YTD Sales, YTD Sales by Region, and YTD Sales by Shipping Type. The dashboard is intended for use by managers and decision-makers within the ecommerce business, providing a clear, concise, and actionable view of key sales data. This enables them to monitor overall business performance, identify trends and opportunities, optimize sales strategies, and improve operational efficiency.</p>
+          </div>
+          <div class="description">
+              <h2>Project Objectives</h2>
+              <ul>
+                <li>Enhance visibility into key sales metrics.</li>
+                <li>Facilitate data-driven decision-making.</li>
+                <li>Identify growth opportunities and areas for improvement.</li>
+                <li>Empower managers to effectively monitor and optimize sales performance.</li>
+            </div>
           </div>
         </div>
         <!-- Portfolio Item End -->
-        
         <!-- Portfolio Item Start -->
         <div class="portfolio-item">
           <div class="portfolio-item-thumbnail">
@@ -242,9 +373,22 @@
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum facilis quaerat labore recusandae aspernatur veniam asperiores cum. Ut commodi voluptates obcaecati? Eaque nulla fugiat voluptatum laudantium, tempore aspernatur soluta cum quis laborum obcaecati nisi sapiente dolorem neque, perferendis molestias minima hic quibusdam odio iste quod consequuntur explicabo facilis sed? Ducimus.</p>
             </div> -->
             <!-- <div class="general-info"> -->
-
+              <div class="description">
+                <h2>Problem Statement</h2>
+                <p>User want us to create a Sales Dashboard showing information of YTD Sales and generate insight for below scenarios</p>
+                <ul>
+                  <li>Create a KPI Banner showing YTD Sales, YTD Profit, YTD Quantity sold, YTD Profit Margin</li>
+                  <li>Find Year on Year growth for each KPI and show a YTD sparkline for each measure in the KPI to understand the monthly trend for each fact</li>
+                  <li>Find YTD Sales, PYTD Sales, YoY Sales growth for diffreent customer category, Add a trend icon for each State</li>
+                  <li>Find YTD Sales Performance by each State</li>
+                  <li>Top 5 and Botton 5 Product by Sales</li>
+                  <li>YTD Sales by Revenue know best and worst performing region all over country</li>
+                  <li>YTD Sales by Shipping Type to get the best shipping type percentage/li>
+                </ul>
+              </div>
               <div class="description">
                 <span><a href="https://lookerstudio.google.com/s/rM3bZrSawng">Link Dashboard</a></span>
+                <span><a href="https://github.com/Nurjanah4079/Database-Pipeline-for-Online-Transactions-Fraud-Detections">Link Project</a></span>
               </div>
             <!-- </div> -->
           </div>
@@ -262,11 +406,87 @@
               <div class="description">
                 <span><a href="https://datastudio.google.com/s/gQkqJGgqE9I">Link Dashboard</a></span>
               </div>
+              <div class="description">
+                <h2>Introduction</h2>
+                <p>The New York Yellow Taxi service is an iconic symbol of the city's transportation system, providing millions of rides to passengers every year. With the rise of ride-hailing services and changing transportation habits, it is essential to analyze the performance of the traditional taxi industry to identify areas of improvement and opportunities for growth. This report presents a comprehensive analysis of the New York Yellow Taxi service's performance in 2019, providing insights into key metrics, trends, and patterns.</p>
+            </div>
+            <div class="description">
+              <h2>Problem Statement</h2>
+                <p>The New York Yellow Taxi service faces increasing competition from ride-hailing services, leading to a decline in market share and revenue. To remain competitive, it is crucial to understand the current state of the industry, identify areas of improvement, and develop strategies to increase efficiency, reduce costs, and enhance the overall passenger experience. The lack of data-driven insights into the taxi industry's performance hinders the development of effective solutions to address these challenges.</p>
+            </div>
+            <div class="description">
+                <h2>Insight</h2>
+                <ul>
+                  <li>Total trips during 2019 reached 84.4 billion</li>
+                  <li>Total Distance in 2019 reached 255.2 billion</li>
+                  <li>Total Passengers in 2019 reached 131.2 billion</li>
+                  <li>Total revenue in 2019 reached 1.6 billion</li>
+                  <li>The average fare is 13.5k, while the maximum is 943.3k</li>
+                  <li>The longest decline occurred for three consecutive months starting from May to August</li>
+                  <li>The longest increase occurred during the two months from August to October.</li>
+                  <li>For a significant decrease occurred from January to February</li>
+                  <li>For a significant increase occurred in February to March</li>
+                  <li>Peak hours occur at 11 PM - 8 AM with the highest peak at 6 PM</li>
+                  <li>For the type of payment used the most are credit cards with a percentage of 71.8% and cash of 27.1%</li>
+                  <li>Meanwhile, for a comparison of payment types with additional income, it can be seen that the credit card type of additional income is dominated by tip_amount, while other types are dominated by extra</li>
+              </div>
+              <div class="description">
+                <span><a href="https://github.com/Nurjanah4079/dashboard-yellow-taxi-trip-2019">Link Project</a></span>
+              </div>
+              
             <!-- </div> -->
           </div>
         </div>
         <!-- Portfolio Item End -->
-
+        <!-- Portfolio Item Start -->
+        <div class="portfolio-item">
+          <div class="portfolio-item-thumbnail">
+            <img src="img/portfolio/project-world-happiness.png" alt="portfolio item thumbnail">
+          </div>
+          <h4 class="portfolio-item-title">World Happiness Demo</h4>
+          <button type="button" class="btn view-project-btn">view project</button>
+          <div class="portfolio-item-details">
+            <img src="img/portfolio/project-world-happiness.png" alt="portfolio item thumbnail">
+              <div class="description">
+                <div class="description">
+                  <iframe title="HR Analytics - Employee Presence Analysis" width="100%" height="500"  src="https://public.tableau.com/views/MyWorldHappinessDemo_16648583468010/Sheet2?:language=en-US&:display_count=n&:origin=viz_share_link" frameborder="0" allowFullScreen="true"></iframe>
+                </div>
+                <div class="description">
+                  <h2>Project Deskription</h2>
+                    <p>The report titled "My World Happiness Demo" uses a world map to visualize happiness scores across different countries. The report focuses on Europe and uses colors to denote the happiness score for each country. The countries in Europe with higher happiness scores are displayed in shades of blue, while countries with lower happiness scores are depicted in shades of green. The report aims to visually represent the happiness index across Europe. It is worth noting that the data for this report is incomplete, as only countries in Europe and Asia are represented on the map. The report could be improved by including data from all countries in the world for a more complete understanding of global happiness.</p>
+                </div>
+                <!-- <div class="description">
+                  <div class='tableauPlaceholder' id='viz1718251938451' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;My&#47;MyWorldHappinessDemo_16648583468010&#47;Sheet2&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='MyWorldHappinessDemo_16648583468010&#47;Sheet2' /><param name='tabs' value='yes' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;My&#47;MyWorldHappinessDemo_16648583468010&#47;Sheet2&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1718251938451');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                </div> -->
+                <span><a href="https://public.tableau.com/views/MyWorldHappinessDemo_16648583468010/Sheet2?:language=en-US&:sid=&:display_count=n&:origin=viz_share_link">Links Dashboard</a></span>
+              </div>
+              </div>
+            <!-- </div> -->
+        
+        </div>
+        <!-- Portfolio Item End -->
+        <!-- Portfolio Item Start -->
+        <div class="portfolio-item">
+          <div class="portfolio-item-thumbnail">
+            <img src="img/portfolio/Global CO2.JPG" alt="portfolio item thumbnail">
+          </div>
+          <h4 class="portfolio-item-title">Global CO2 Emissions</h4>
+          <button type="button" class="btn view-project-btn">view project</button>
+          <div class="portfolio-item-details">
+            <img src="img/portfolio/Global CO2.JPG" alt="portfolio item thumbnail">
+                <div class="description">
+                  <h2>Project Deskription</h2>
+                    <p>The report "Global CO2 Emissions" analyzes and visualizes CO2 emissions per capita across different regions, including Africa Sub-Sahara, Latin America and Caribbean Islands, North America, South Asia, East Asia and Pacific, and Europe and Middle East, providing a comprehensive overview of global CO2 emissions and their regional disparities.</p>
+                </div>
+                <!-- <div class="description">
+                  <div class='tableauPlaceholder' id='viz1718251782857' style='position: relative'><noscript><a href='#'><img alt='Global CO2 Emissions ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Gl&#47;GlobalCO2Emissions_16648599560790&#47;Sheet2&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='GlobalCO2Emissions_16648599560790&#47;Sheet2' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Gl&#47;GlobalCO2Emissions_16648599560790&#47;Sheet2&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1718251782857');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                </div> -->
+                <span><a href="https://public.tableau.com/views/GlobalCO2Emissions_16648599560790/Sheet2?:language=en-US&:sid=&:display_count=n&:origin=viz_share_link">Links Dashboard</a></span>
+              </div>
+            <!-- </div> -->
+          
+        </div>
+        <!-- Portfolio Item End -->
 
 
     </div>
@@ -322,6 +542,24 @@
   </div>
 </div>
 <!-- Portfolio Item Details Popup End -->
+<!-- <script>
+  document.addEventListener("DOMContentLoaded", function() {
+      const numStars = 100; // Ganti dengan jumlah bintang yang diinginkan
+
+      for (let i = 0; i < numStars; i++) {
+          createStar();
+      }
+
+      function createStar() {
+          const star = document.createElement("div");
+          star.className = "star";
+          star.style.top = `${Math.random() * 100}vh`;
+          star.style.left = `${Math.random() * 100}vw`;
+          star.style.animationDuration = `${Math.random() * 4 + 1}s`; // Durasi antara 1 hingga 5 detik
+          document.body.appendChild(star);
+      }
+  });
+</script> -->
 
 <script src="js/script.js"></script>
 </body>
