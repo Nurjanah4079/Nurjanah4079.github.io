@@ -6,29 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/font-awesome.css">
   <link rel="stylesheet" href="css/style.css">
-  <!-- <style>
-    body {
-        margin: 0;
-        overflow: hidden;
-        background-color: #111;
-    }
+  <title>Nurjanah Website</title>
+  <link rel="icon" href="img/myprofile-img.png" type="image/png">
 
-    .star {
-    position: absolute;
-    width: 2px;
-    height: 2px;
-    background-color: #fff;
-    border-radius: 50%;
-    transform: translateX(-50%);
-    animation: twinkling linear infinite;
-    z-index: 0; /* Menetapkan z-index untuk bintang */
-    }
-
-    @keyframes twinkling {
-        0%, 100% { opacity: 0; }
-        5%, 95% { opacity: 1; }
-    }
-</style> -->
 </head>
 <body>
   <!-- Page Loader Strat-->
@@ -63,11 +43,11 @@
         <button type="button" class="nav-toggler">
           <span></span>
         </button>
-        <nav class="nav">
+        <nav class="__nav">
           <div class="nav-inner">
             <ul>
               <li><a href="#home" class="nav-item link-item">home</a></li>
-              <li><a href="#about" class="nav-item link-item">about</a></li>
+              <li><a href="#about" class="nav-item link-item ">about</a></li>
               <li><a href="#portfolio" class="nav-item link-item">portfolio</a></li>
               <li><a href="#contact" class="nav-item link-item">contact</a></li>
             </ul>
@@ -76,25 +56,20 @@
       </div>
     </div>
   </header>
-  <!-- Header End -->
-
+  <!-- Header End
   <!-- Home Section Start -->
   <section class="home-section align-items-center" id="home"> 
     <div class="container">
-      <div class="row align-items-center">
         <div class="home-text">
+          <div class="img-box">
+            <img src="img/myprofile-img.png" alt="image-png" loading="lazy">
+          </div>
           <p>Hello, I'm</p>
           <h1>Nurjanah</h1>
           <h2>Business Intelligence • Data Analyst • Data Engineer</h2>
           <a href="#about" class="btn link-item">more about me</a>
           <a href="#portfolio" class="btn link-item">portofolio</a>
         </div>
-        <div class="home-img">
-          <div class="img-box">
-            <img src="img/myprofile-img.png" alt="image-png">
-          </div>
-        </div>
-      </div>
     </div>
   </section>
 
@@ -111,17 +86,18 @@
       <div class="row">
         <div class="about-img">
           <div class="img-box">
-            <img src="img/myabout-img.png" alt="about img">
+            <img src="img/myabout-img.PNG" alt="about img">
           </div>
         </div>
         <div class="about-text">
-          <p>Informatics engineering fresh graduate with a passion for embracing technological challenges and innovation. Well-acquainted with python, SQL, Java and several more programming languages. Involved in projects related to Data Analysis and Data Warehousing. Additionally, I have experience in student organizations, worked as a lecturer assistant, completed a web developer internship, and participated in training programs as a data engineer and data analyst. I have great teamwork, resilience, and spirit.</p>
+          <p>Hey there! I'm a fresh grad in Informatics Engineering, all geared up to tackle tech challenges and spark innovation. I've got a solid grip on programming for data and web development, and I've dived into projects like Data Analysis and Data Warehousing. My journey includes being active in student orgs, assisting as a lecturer, interning as a web developer and business intelligence analyst, and training as a data engineer and analyst. I'm all about teamwork, resilience, and dedication. Ready to make a difference? Hire Me!</p>
           <div class="about-tabs">
             <button type="button" class="tab-item active" data-target="#education"></button>
             <button type="button" class="tab-item" data-target="#experience"></button>
           </div>
       
           <a href="#contact" class="btn link-item">contact me</a>
+          <a href="img/Nurjanah - CV.pdf" class="btn" download>download CV</a>
         </div>     
       </div>
     </div>
@@ -155,7 +131,7 @@
                 </div>
                 </div> 
               <div class="description">
-                <span><a href="https://app.powerbi.com/view?r=eyJrIjoiZWExNmQ1ZTItM2ZiNi00OTgzLWIxNDEtNmQ0ZGQ0MTA0NjJkIiwidCI6IjM3NTA2OTdkLTI5ZTItNDQ1ZC1hZmU5LTE5ZWE3YzlkYTEyNCIsImMiOjEwfQ%3D%3D">Link Report</a></span>
+                <span><a href="https://app.powerbi.com/view?r=eyJrIjoiZWExNmQ1ZTItM2ZiNi00OTgzLWIxNDEtNmQ0ZGQ0MTA0NjJkIiwidCI6IjM3NTA2OTdkLTI5ZTItNDQ1ZC1hZmU5LTE5ZWE3YzlkYTEyNCIsImMiOjEwfQ%3D%3D">Access the dashboard here</a></span>
               </div>
               <div class="description">
                 <h2>Introduction</h2>
@@ -213,10 +189,6 @@
                   <li>Assist management in planning more effective marketing and sales strategies.</li>
                 </ul><br>
               </div> 
-              <!-- <div class="description">
-                <iframe title="AdventureWorks" width="845" height="450" src="https://app.powerbi.com/view?r=eyJrIjoiZWExNmQ1ZTItM2ZiNi00OTgzLWIxNDEtNmQ0ZGQ0MTA0NjJkIiwidCI6IjM3NTA2OTdkLTI5ZTItNDQ1ZC1hZmU5LTE5ZWE3YzlkYTEyNCIsImMiOjEwfQ%3D%3D&embedImagePlaceholder=true" frameborder="0" allowFullScreen="true"></iframe>
-              </div>  -->
-            <!-- </div> -->
           </div>
         </div>
         <!-- Portfolio Item End -->
@@ -234,7 +206,7 @@
               </div>
                </div> 
                <div class="description">
-                <span><a href="https://app.powerbi.com/view?r=eyJrIjoiZTUxMDQwOGQtOTRlNi00Y2FlLTgxMWYtMDRjMWMwOGRhNTE0IiwidCI6IjM3NTA2OTdkLTI5ZTItNDQ1ZC1hZmU5LTE5ZWE3YzlkYTEyNCIsImMiOjEwfQ%3D%3D">Links Report</a></span>
+                <span><a href="https://app.powerbi.com/view?r=eyJrIjoiZTUxMDQwOGQtOTRlNi00Y2FlLTgxMWYtMDRjMWMwOGRhNTE0IiwidCI6IjM3NTA2OTdkLTI5ZTItNDQ1ZC1hZmU5LTE5ZWE3YzlkYTEyNCIsImMiOjEwfQ%3D%3D">Access the dashboard here</a></span>
               </div>
               <div class="description">
                 <h2>Background Case</h2>
@@ -322,7 +294,7 @@
               </div>
             </div> 
             <div class="description">
-              <span><a href="https://app.powerbi.com/view?r=eyJrIjoiM2QyZmRkMjItN2ZmMS00MjQ3LTkxNTEtZDVhODJhNTZlMjU3IiwidCI6IjM3NTA2OTdkLTI5ZTItNDQ1ZC1hZmU5LTE5ZWE3YzlkYTEyNCIsImMiOjEwfQ%3D%3D">Links Report</a></span>
+              <span><a href="https://app.powerbi.com/view?r=eyJrIjoiM2QyZmRkMjItN2ZmMS00MjQ3LTkxNTEtZDVhODJhNTZlMjU3IiwidCI6IjM3NTA2OTdkLTI5ZTItNDQ1ZC1hZmU5LTE5ZWE3YzlkYTEyNCIsImMiOjEwfQ%3D%3D">Access the dashboard here</a></span>
             </div>
             <div class="description">
               <h2>Introduction</h2>
@@ -354,7 +326,7 @@
               </div>
             </div> 
             <div class="description"> 
-              <span><a href="https://public.tableau.com/views/BikeStores_17182904078520/Dashboard1?:language=en-US&publish=yes&:sid=&:display_count=n&:origin=viz_share_link">Link Project</a></span>
+              <span><a href="https://public.tableau.com/views/BikeStores_17182904078520/Dashboard1?:language=en-US&publish=yes&:sid=&:display_count=n&:origin=viz_share_link">Access the dashboard here</a></span>
             </div>
             <div class="description">
               <h2>Project Description</h2>
@@ -384,7 +356,7 @@
               </div>
           </div> 
           <div class="description">
-            <span><a href="https://app.powerbi.com/view?r=eyJrIjoiOGM0MGFjMjMtMjIyNy00ZTRkLWI3MzQtOTlmMGVkNTNhYTYzIiwidCI6IjM3NTA2OTdkLTI5ZTItNDQ1ZC1hZmU5LTE5ZWE3YzlkYTEyNCIsImMiOjEwfQ%3D%3D">Links Report</a></span>
+            <span><a href="https://app.powerbi.com/view?r=eyJrIjoiOGM0MGFjMjMtMjIyNy00ZTRkLWI3MzQtOTlmMGVkNTNhYTYzIiwidCI6IjM3NTA2OTdkLTI5ZTItNDQ1ZC1hZmU5LTE5ZWE3YzlkYTEyNCIsImMiOjEwfQ%3D%3D">Access the dashboard here</a></span>
           </div>
           <div class="description">
               <h2>Introduction</h2>
@@ -414,7 +386,7 @@
                 <iframe height="1000" src="https://lookerstudio.google.com/embed/reporting/5774d900-c104-4251-baa0-cccf1aa32467/page/B26AD" frameborder="0" style="border:0" allowfullscreen sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"></iframe>
             </div>
             <div class="description">
-              <span><a href="https://lookerstudio.google.com/s/rM3bZrSawng">Link Dashboard</a></span>
+              <span><a href="https://lookerstudio.google.com/s/rM3bZrSawng">Access the dashboard here</a></span>
             </div>
             </div>
             <!-- <div class="general-info"> -->
@@ -452,7 +424,7 @@
               </div>
               </div>
               <div class="description">
-                <span><a href="https://datastudio.google.com/s/gQkqJGgqE9I">Link Dashboard</a></span>
+                <span><a href="https://datastudio.google.com/s/gQkqJGgqE9I">Access the dashboard here</a></span>
               </div>
               <div class="description">
                 <h2>Introduction</h2>
@@ -487,14 +459,14 @@
         <!-- Portfolio Item Start -->
         <div class="portfolio-item">
           <div class="portfolio-item-thumbnail">
-              <img src="img/portfolio/World Happines.JPG" alt="portfolio item thumbnail">
+              <img src="img/portfolio/WorldHappines.JPG" alt="portfolio item thumbnail">
           </div>
           <h4 class="portfolio-item-title">World Happiness</h4>
           <button type="button" class="btn view-project-btn">View Project</button>
           <div class="portfolio-item-details">
             <img src="img/portfolio/WorldHappines.JPG" alt="portfolio item thumbnail">
             <div class="description">
-              <span><a href="https://public.tableau.com/views/MyWorldHappinessDemo_16648583468010/Sheet2?:language=en-US&amp;:display_count=n&amp;:origin=viz_share_link">Links Dashboard</a></span>
+              <span><a href="https://public.tableau.com/views/MyWorldHappinessDemo_16648583468010/Sheet2?:language=en-US&amp;:display_count=n&amp;:origin=viz_share_link">Access the dashboard here</a></span>
             </div>
               <div class="description">
                   <h2>Project Description ppp</h2>
@@ -515,7 +487,7 @@
           <div class="portfolio-item-details">
             <img src="img/portfolio/Global CO2.JPG" alt="portfolio item thumbnail">
                 <div class="description">
-                  <span><a href="https://public.tableau.com/views/GlobalCO2Emissions_16648599560790/Sheet2?:language=en-US&:sid=&:display_count=n&:origin=viz_share_link">Links Dashboard</a></span>
+                  <span><a href="https://public.tableau.com/views/GlobalCO2Emissions_16648599560790/Sheet2?:language=en-US&:sid=&:display_count=n&:origin=viz_share_link">Access the dashboard here</a></span>
                 </div>
                 <div class="description">
                   <h2>Project Deskription</h2>
@@ -567,8 +539,11 @@
 <div class="portfolio-popup">
   <div class="pp-inner">
     <div class="pp-content">
-      <div class="pp-header">
+      <!-- <div class="row flex-end"> -->
         <button type="button" class="btn pp-close"><i class="fas fa-times"></i></button>
+      <!-- </div> -->
+      <div class="pp-header">
+        
         <div class="pp-thumbnail">
         </div>
         <h3></h3>
@@ -580,24 +555,6 @@
   </div>
 </div>
 <!-- Portfolio Item Details Popup End -->
-<!-- <script>
-  document.addEventListener("DOMContentLoaded", function() {
-      const numStars = 100; // Ganti dengan jumlah bintang yang diinginkan
-
-      for (let i = 0; i < numStars; i++) {
-          createStar();
-      }
-
-      function createStar() {
-          const star = document.createElement("div");
-          star.className = "star";
-          star.style.top = `${Math.random() * 100}vh`;
-          star.style.left = `${Math.random() * 100}vw`;
-          star.style.animationDuration = `${Math.random() * 4 + 1}s`; // Durasi antara 1 hingga 5 detik
-          document.body.appendChild(star);
-      }
-  });
-</script> -->
 
 <script src="js/script.js">
 
