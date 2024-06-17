@@ -6,7 +6,7 @@ Fonts
 Global Setting ungu 722BF5 dark 18171D blue 153AEC
 ----------------------------*/
 :root{
-    --main-color: #ff0072;
+    --main-color: #323448;
     --blue: #153AEC;
     --blue-dark: #ff0072;
     --orange: #722BF5;
@@ -14,10 +14,14 @@ Global Setting ungu 722BF5 dark 18171D blue 153AEC
     --pink-light: #efa2b4;
     --cyan-light: #aef1ee;
     --white: #ffffff;
-    --white-alpha-40: rgba(255, 255, 255, 0.150);
-    --white-alpha-25: rgba(255, 255, 255, 0.054);
+    --white-alpha-40: #FFFFFF;
+    --white-alpha-25: #F5F2F7;
     --backdrop-filter-blur: blur(5px);
     --background-dark: #18171D;
+    --yellow: #DDB14E;
+    --red: #D66E70; 
+    --grey: #B1B5BD;
+    --purple: #626EC1;
 }
 
 /*----------------------------
@@ -35,7 +39,8 @@ Global Setting
 }
 body{
     min-height: 100vh;
-    background-image: linear-gradient(to bottom right, black, black);
+    background-color: var(--white-alpha-25);
+    background-image: linear-gradient(to bottom right, #F5F2F7, #F5F2F7);
     background-attachment: fixed;
     font-size: 16px;
     font-family: 'Poppins', sans-serif;
@@ -70,7 +75,8 @@ h3,h4,h5,h6{
     color: var(--main-color);
 }
 p{
-    color: var(--white);
+    color: var(--main-color);
+    font-size: medium;
 }
 img{
     max-width: 100%;
@@ -80,9 +86,13 @@ ul{
     list-style: none;
     color: var(--white);
 }
+li{
+    color: var(--main-color);
+    font-size: medium;
+}
 section{
     background-color: var(--white-alpha-25);
-    border: 1px solid var(--white-alpha-40);
+    /* border: 1px solid var(--white-alpha-40); */
     min-height: calc(100vh - 70px);
     border-radius: 30px;
     backdrop-filter: var(--backdrop-filter-blur);
@@ -148,14 +158,15 @@ button{
     user-select: none;
 }
 .btn{
+    
     line-height: 1.5;
-    background-color: var(--white-alpha-25);
+    background-color: var(--red);
     /* background-image: linear-gradient(to bottom right, var(--main-color), var(--orange)); */
     border: 1px solid var(--white-alpha-40);
     padding: 10px 28px;
     display: inline-block;
     border-radius: 30px;
-    color: var(--main-color);
+    color: var(--white);
     font-weight: 500;
     text-transform: capitalize;
     font-family: inherit;
@@ -174,7 +185,7 @@ button{
     top: 0;
     height: 100%;
     width: 0%;
-    background-color: var(--main-color);
+    background-color: var(--red);
     z-index: -1;
     transition: width 0.3s ease;
 }
@@ -182,7 +193,7 @@ button{
     width: 100%;
 }
 .btn:hover{
-    color: var(--white);
+    color: var(--main-color);
 }
 /* ANimation KeyFrames */
 @keyframes fadeOut{
@@ -225,7 +236,9 @@ button{
         transform: rotate(360deg);
     }
 }
-/* Background Circles*/
+/* ------------------------
+Background Circles
+---------------------------*/
 .bg-circles{
     position: fixed;
     top: 0;
@@ -240,42 +253,42 @@ button{
     border-radius: 50%;
 }
 .bg-circles .circle-1 {
-    height: 60px;
-    width: 60px;
-    background-color: var(--blue);
-    left: 5%;
+    height: 80px;
+    width: 80px;
+    background-color: var(--purple);
+    left: 8%;
     top: 10%;
-    opacity: 0.4;
-    box-shadow: 0 0 20px 10px var(--blue), 0 0 40px 20px var(--blue), 0 0 60px 30px var(--blue);
+    opacity: 0.9;
+    box-shadow: 0 0 20px 10px var(--purple), 0 0 40px 20px var(--purple), 0 0 60px 30px var(--purple);
     animation: zoomInOut 8s linear infinite;
 }
 .bg-circles .circle-2 {
-    height: 80px;
-    width: 80px;
-    background-color: var(--main-color);
-    left: 38%;
+    height: 60px;
+    width: 60px;
+    background-color: var(--red);
+    left: 62%;
     top: 32%;
-    opacity: 0.4;
-    box-shadow: 0 0 20px 10px var(--main-color), 0 0 40px 20px var(--main-color), 0 0 60px 30px var(--main-color);
+    opacity: 0.9;
+    box-shadow: 0 0 20px 10px var(--red), 0 0 40px 20px var(--red), 0 0 60px 30px var(--red);
     animation: bounceTop 5s ease-in-out infinite;
 }
 .bg-circles .circle-3 {
     height: 120px;
     width: 120px;
-    background-color: var(--white);
-    top: 40%;
-    right: -60px;
-    opacity: 0.6;
-    box-shadow: 0 0 20px 10px var(--white), 0 0 40px 20px var(--white), 0 0 60px 30px var(--white);
+    background-color: var(--purple);
+    top: 50%;
+    left: 79%;
+    opacity: 0.9;
+    box-shadow: 0 0 20px 10px var(--purple), 0 0 40px 20px var(--purple), 0 0 60px 30px var(--purple);
 }
 .bg-circles .circle-4 {
     height: 50px;
     width: 50px;
-    background-color: var(--orange);
+    background-color: var(--yellow);
     top: 80%;
-    left: -30px;
-    opacity: 0.6;
-    box-shadow: 0 0 20px 10px var(--orange), 0 0 40px 20px var(--orange), 0 0 60px 30px var(--orange);
+    left: 28%;
+    opacity: 0.9;
+    box-shadow: 0 0 20px 10px var(--yellow), 0 0 40px 20px var(--yellow), 0 0 60px 30px var(--yellow);
     animation: bounceTop 5s ease-in-out infinite;
 }
 /* -----------------------
@@ -326,22 +339,23 @@ Overlay
 .page-loader div:nth-child(1){
     height: 60px;
     width: 60px;
-    border-color: var(--main-color);
+    border-color: var(--red);
 }
 .page-loader div:nth-child(2){
     height: 45px;
     width: 45px;
-    border-color: var(--blue);
+    border-color: var(--yellow);
     animation: 1.2s;
 }
 .page-loader div:nth-child(3){
     height: 30px;
     width: 30px;
-    border-color: var(--orange);
+    border-color: var(--purple);
 }
 /* -----------------------
 Header 
 -------------------------*/
+
 .header{
     position: absolute;
     left: 0;
@@ -366,7 +380,7 @@ Header
     cursor: pointer;
     border-radius: 50%;
     background-color: var(--white-alpha-25);
-    border: 1px solid var(--white-alpha-40);
+    border: 1px solid var(--grey);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -381,7 +395,7 @@ Header
 .header .nav-toggler span{
     height: 2px;
     width: 24px;
-    background-color: var(--main-color);
+    background-color: var(--grey);
     position: relative;
     transition: background-color 0.3s ease;
 }
@@ -395,7 +409,7 @@ Header
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: var(--main-color);
+    background-color: var(--grey);
     transition: all 0.3s ease;
 }
 
@@ -417,7 +431,7 @@ Header
 .header:not(.active) .nav-toggler:hover span::after{
     width: 50%;
 }
-.header .nav{
+.header .__nav{
     position: fixed;
     left: 0;
     top: 0;
@@ -427,7 +441,7 @@ Header
     overflow-y: auto;
     visibility: hidden;
 }
-.header.active .nav{
+.header.active .__nav{
     visibility: visible;
 }
 .header .nav-inner{
@@ -454,7 +468,7 @@ Header
 .header .nav-inner ul li a{
     font-size: 40px;
     text-transform: capitalize;
-    color: var(--blue-dark);
+    color: var(--main-color);
     display: block;
     font-weight: 500;
     padding: 8px 15px;
@@ -478,24 +492,61 @@ Header
 .header .nav-inner ul li a:hover{
     color: var(--main-color);
 }
-
+/* -----------------------
+Navbar
+-------------------------*/
+.nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; /* changed from center to flex-start */
+    height: 100vh; /* tambahkan height 100vh untuk membuat navbar full height */
+    left: 0; /* tambahkan left: 0 untuk membuat navbar aligned to left */
+    position: fixed; /* tambahkan position: fixed untuk membuat navbar sticky */
+    padding: 20px;
+  }
+  
+  .nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav li {
+    margin-bottom: 20px;
+  }
+  
+  .nav a {
+    color: var(--main-color);;
+    text-decoration: none;
+  }
+  
+  .nav i {
+    font-size: 24px;
+    margin-right: 10px;
+  }
+  
+  .nav a:hover {
+    background-color: var(--white-alpha-25);
+    color: var(--grey);
+  }
 /* -----------------------
 Home Section 
 -------------------------*/
 .home-section{
-    padding: 120px 0;
+    background-color: transparent;
 }
 .home-section.active{
     display: flex;
 }
-.home-text,
-.home-img{
-    width: 50%;
+.home-text{
+    text-align: center;
     padding: 15px;
 }
 .home-text p{
     font-size: 18px;
     margin-top: 20px;
+    color: var(--background-dark);
 }
 .home-text h1{
     font-size: 50px;
@@ -510,23 +561,19 @@ Home Section
 .home-text .btn{
     margin: 0 15px 15px 0;
 }
-.home-img .img-box{
-    max-width: 360px;
-    background-color: var(--white-alpha-25);
-    border-radius: 50%;
-    border: 8px solid var(--white-alpha-25);
+.home-text .img-box{
+    max-width: 200px;
     margin: auto;
-    box-shadow: 0 0 10px 5px var(--main-color), 0 0 20px 10px var(--main-color), 0 0 30px 15px var(--main-color);
 }
-.home-img .img-box img{
+.home-text .img-box img{
     width: 100%;
     border-radius: 50%;
+    background-color: var(--yellow);
 }
 
-
-
-
-/* about section */
+/*-----------------
+about section 
+------------------*/
 .about-img{
     width: 50%;
     padding: 0 15px;
@@ -536,26 +583,32 @@ Home Section
     padding: 0 15px;
 }
 .about-img .img-box{
-    background-color: var(--white-alpha-25);
-    max-width: 380px;
-    border: 1px solid var(--white-alpha-40);
+    /* background-color: var(--white-alpha-25); */
+    max-width: 300px;
+    max-height: 380px;
+    /* border: 1px solid var(--white-alpha-40); */
     margin: auto;
     border-radius: 10px;
 }
 .about-img .img-box img{
     width: 100%;
+    border-radius: 50%;
+    background-color: var(--yellow);
 }
 .about-text h3{
     text-transform: capitalize;
     font-size: 20px;
     margin: 20px 0;
 }
+.about-text p{
+    color: var(--background-dark);
+}
 .about-text .skills{
     display: flex;
     flex-wrap: wrap;
 }
 .about-text .skill-item{
-    background-color: var(--white-alpha-25);
+    background-color: var(--background-dark);
     border: 1px solid var(--white-alpha-40);
     padding: 5px 15px;
     text-transform: capitalize;
@@ -663,7 +716,9 @@ Home Section
 .about-text .btn{
     margin: 0 15px 15px 0;
 }
-
+.about-text p{
+    text-align: center;
+}
 /* --------------------
 Portfolio Section 
 -----------------------*/
@@ -677,24 +732,41 @@ Portfolio Section
     display: flex;
     flex-direction: column;
     align-items: center; 
+    background-color: var(--white);
+    border-radius: 10px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    /* background-color: var(--white-alpha-40);
+    border:1px solid var(--white-alpha-40);
+    border-radius: 10px; */
 }
 .portfolio-item-thumbnail{
-    padding: 10px;
-    background-color: var(--white-alpha-25);
+    padding: 20px;
+    background-color: var(--white-alpha-40);
     border:1px solid var(--white-alpha-40);
     border-radius: 10px;
 }
+
+
+
 .portfolio-item-thumbnail img{
     width: 100%;
     border-radius: 10px;
 }
+.portfolio-item-thumbnail .btn{
+    padding-bottom: 10px;
+}
 .portfolio-item-title {
     text-transform: capitalize;
     margin: auto 0; 
+    text-align: center;
     max-heigflow: hidden;
     ht: 60px;
     overtext-overflow: ellipsis;
     line-height: 20px;
+    /* margin-left: 5%; */
 }
 .portfolio-item h3{
     font-size: 20px;
@@ -706,8 +778,7 @@ Portfolio Section
     /* font-size: 20px; */
     text-transform: capitalize;
     /* height: 50vh; */
-    margin: 20px 0;
-    
+    margin: 20px 0; 
 
 }
 .portfolio-item-details {
@@ -750,15 +821,37 @@ Portfolio Section
 }
 .pp-content{
     background-color: var(--white-alpha-25);
-    padding: 30px;
+    padding: 30px 30px 50px;
     border-radius: 30px;
-    max-width: 900px;
+    max-width: 1200px;
     width: 100%;
-    border: 1px solid var(--white-alpha-40);
-    backdrop-filter: var(--backdrop-filter-blur);
+    backdrop-filter: var(--white);
     opacity: 0;
     transform: scale(0.9);
 }
+.pp-content .btn {
+    height: 50px;
+    width: 50px;
+    /* padding-right: 25px; */
+    padding: 10px 25px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--white-alpha-25);
+    border: 1px solid var(--grey);
+    border-radius: 50%;
+}
+
+.pp-content .btn i {
+    font-size: 20px;
+    color: var(--grey);
+    
+    
+}
+
 .portfolio-popup.open .pp-content{
     opacity: 1;
     transform: scale(1);
@@ -766,10 +859,26 @@ Portfolio Section
 }
 .pp-header{
     position: relative;
+    padding-left: 25px;
 }
 .pp-header .btn{
-    height: 40px;
-    width: 40px;
+    /* width: 50px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: var(--white-alpha-25);
+    border: 1px solid var(--grey);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 15px;
+    z-index: 1;
+    transition: opacity 0.5s ease-in-out; */
+    height: 50px;
+    width: 50px;
+    background-color: var(--white-alpha-25);
+    border: 1px solid var(--grey);
     padding: 0;
     display: flex;
     align-items: center;
@@ -778,10 +887,14 @@ Portfolio Section
     right: -28px;
     top: -50px;
 }
+.pp-header .btn .i{
+    height: 30px;
+    width: 30px;
+}
 .pp-thumbnail img{
     border-radius: 10px;
 }
-
+/* .pp-header .pp */
 .pp-header h3{
     font-size: 25px;
     text-transform: capitalize;
@@ -789,6 +902,7 @@ Portfolio Section
 }
 .pp-body .description{
     margin-bottom: 20px;
+    margin-left: 10px;
     font-weight: 100;
 }
 .pp-body .general-info .description p{
@@ -796,10 +910,12 @@ Portfolio Section
 }
 .pp-body .description iframe{
     margin-bottom: 20px;
+    /* margin-left: 20px; */
 }
 .pp-body li{
     margin-bottom: 0 0 10px 10px;
     list-style: circle;
+    margin-left: 20px;
     /* font-weight: 500; */
 }
 .pp-body .general-info li span{
@@ -830,6 +946,10 @@ Portfolio Section
     margin: 6px 4px 0 0;
     transition: all 0.3s ease;
 }
+/* .description {
+    padding-left: 3%;
+    padding-right: 3%;
+} */
 
 /* add */
 /* Ensures the iframe scales properly within its container */
@@ -913,29 +1033,38 @@ Portfolio Section
     text-transform: lowercase;
     margin: 0 0 5px;
 }
-.contact-info-item .social-links a{
+.contact-info-item .social-links a {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    height: 40px;
-    width: 40px;
+    height: 50px;
+    width: 50px;
     background-color: var(--white-alpha-25);
     border: 1px solid var(--white-alpha-40);
     color: var(--main-color);
     border-radius: 50%;
-    margin: 6px 4px 0 0;
+    margin: 6px 20px 0 0;
     transition: all 0.3s ease;
 }
-.contact-info-item .social-links a:hover{
+
+.contact-info-item .social-links a i {
+    font-size: 30px; /* Atur ukuran ikon */
+}
+
+.contact-info-item .social-links a:hover {
     color: var(--white);
     background-color: var(--main-color);
 }
+
 
 /*responsive*/
 @media(max-width:991px){
     .container{
         padding: 0;
     }
+    .header {
+        display: block;
+      }
     .home-text,
     .home-img{
         width: 100%;
@@ -946,8 +1075,8 @@ Portfolio Section
     .home-img{
         order: -1;
     }
-    .home-img .img-box{
-        min-width: 300px;
+    .img-box{
+        min-width: 200px;
     }
     .home-text .btn{
         margin: 0 7px 15px;
@@ -986,12 +1115,32 @@ Portfolio Section
     .portfolio-section{
         padding-left: 20%;
     }
+    .bg-circles .circle-1 {
+        height: 60px;
+        width: 60px;
+    }
+    .bg-circles .circle-2 {
+        height: 40px;
+        width: 40px;
+    }
+    .bg-circles .circle-3 {
+        height: 100px;
+        width: 100px;
+    }
+    .bg-circles .circle-4 {
+        height: 20px;
+        width: 20px;
+    }
+    
 
 }
 @media(max-width:575px){
-    .header .nav-inner ul li a{
+    /* .header .nav-inner ul li a{
         font-size: 35px;
-    }
+    } */
+    .header {
+        display: block;
+      }
     .home-text h1{
         font-size: 30px;
     }
@@ -1003,5 +1152,47 @@ Portfolio Section
     }
     .portfolio-section{
         padding-left: 20%;
+    }
+    .nav-toggler {
+        display: block;
+      }
+     .___nav {
+        display: block;
+      }
+     .nav {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #fff; /* add background color to navbar */
+        padding: 10px; /* add padding to navbar */
+      }
+     .nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+     .nav li {
+        margin-bottom: 10px;
+      }
+     .nav a {
+        color: #333; /* add text color to navbar links */
+      }
+      .bg-circles .circle-1 {
+        height: 40px;
+        width: 40px;
+    }
+    .bg-circles .circle-2 {
+        height: 20px;
+        width: 20px;
+    }
+    .bg-circles .circle-3 {
+        height: 80px;
+        width: 80px;
+    }
+    .bg-circles .circle-4 {
+        height: 10px;
+        width: 10px;
     }
 }
