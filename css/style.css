@@ -321,7 +321,6 @@ Overlay
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 .page-loader div{
     border: 2px solid transparent;
@@ -355,7 +354,6 @@ Overlay
 /* -----------------------
 Header 
 -------------------------*/
-
 .header{
     position: absolute;
     left: 0;
@@ -499,10 +497,10 @@ Navbar
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start; /* changed from center to flex-start */
-    height: 100vh; /* tambahkan height 100vh untuk membuat navbar full height */
-    left: 0; /* tambahkan left: 0 untuk membuat navbar aligned to left */
-    position: fixed; /* tambahkan position: fixed untuk membuat navbar sticky */
+    align-items: flex-start; 
+    height: 100vh; 
+    left: 0; 
+    position: fixed; 
     padding: 20px;
   }
   
@@ -570,7 +568,6 @@ Home Section
     border-radius: 50%;
     background-color: var(--yellow);
 }
-
 /*-----------------
 about section 
 ------------------*/
@@ -583,10 +580,8 @@ about section
     padding: 0 15px;
 }
 .about-img .img-box{
-    /* background-color: var(--white-alpha-25); */
     max-width: 300px;
     max-height: 380px;
-    /* border: 1px solid var(--white-alpha-40); */
     margin: auto;
     border-radius: 10px;
 }
@@ -615,10 +610,6 @@ about section
     margin: 0 10px 10px 0;
     border-radius: 20px;
 }
-
-
-
-
 .about-tabs .tab-item{
     padding: 2px 0;
     background-color: transparent;
@@ -634,7 +625,6 @@ about section
     opacity: 0.5;
     transition: all 0.3s ease;
 }
-
 .about-tabs .tab-item:last-child{
     margin: 0;
 }
@@ -673,7 +663,6 @@ about section
     left: 5px;
     background-color: var(--main-color);
 }
-
 .about-text .tab-content{
     padding: 40px 0;
     display: none;
@@ -738,9 +727,6 @@ Portfolio Section
     padding-left: 10px;
     padding-right: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    /* background-color: var(--white-alpha-40);
-    border:1px solid var(--white-alpha-40);
-    border-radius: 10px; */
 }
 .portfolio-item-thumbnail{
     padding: 20px;
@@ -748,9 +734,6 @@ Portfolio Section
     border:1px solid var(--white-alpha-40);
     border-radius: 10px;
 }
-
-
-
 .portfolio-item-thumbnail img{
     width: 100%;
     border-radius: 10px;
@@ -793,7 +776,6 @@ Portfolio Section
     width: 80%;
     text-align: center;
 }
-
 .view-project-btn {
     margin-top: auto; 
 }
@@ -844,14 +826,10 @@ Portfolio Section
     border: 1px solid var(--grey);
     border-radius: 50%;
 }
-
 .pp-content .btn i {
     font-size: 20px;
     color: var(--grey);
-    
-    
 }
-
 .portfolio-popup.open .pp-content{
     opacity: 1;
     transform: scale(1);
@@ -862,19 +840,6 @@ Portfolio Section
     padding-left: 25px;
 }
 .pp-header .btn{
-    /* width: 50px;
-    height: 50px;
-    border: none;
-    cursor: pointer;
-    border-radius: 50%;
-    background-color: var(--white-alpha-25);
-    border: 1px solid var(--grey);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 15px;
-    z-index: 1;
-    transition: opacity 0.5s ease-in-out; */
     height: 50px;
     width: 50px;
     background-color: var(--white-alpha-25);
@@ -946,12 +911,6 @@ Portfolio Section
     margin: 6px 4px 0 0;
     transition: all 0.3s ease;
 }
-/* .description {
-    padding-left: 3%;
-    padding-right: 3%;
-} */
-
-/* add */
 /* Ensures the iframe scales properly within its container */
 .iframe-container {
     position: relative;
@@ -960,7 +919,6 @@ Portfolio Section
     height: 0;
     overflow: hidden;
 }
-
 .iframe-container iframe {
     position: absolute;
     top: 0;
@@ -969,7 +927,6 @@ Portfolio Section
     height: 100%;
     border: 0;
 }
-
 .iframe-container object {
     position: absolute;
     top: 0;
@@ -978,7 +935,6 @@ Portfolio Section
     height: 100%;
     border: 0;
 }
-
 /* contact section */
 .contact-form,
 .contact-info{
@@ -1046,17 +1002,14 @@ Portfolio Section
     margin: 6px 20px 0 0;
     transition: all 0.3s ease;
 }
-
 .contact-info-item .social-links a i {
-    font-size: 30px; /* Atur ukuran ikon */
+    font-size: 30px; 
 }
 
 .contact-info-item .social-links a:hover {
     color: var(--white);
     background-color: var(--main-color);
 }
-
-
 /*responsive*/
 @media(max-width:991px){
     .container{
@@ -1131,13 +1084,8 @@ Portfolio Section
         height: 20px;
         width: 20px;
     }
-    
-
 }
 @media(max-width:575px){
-    /* .header .nav-inner ul li a{
-        font-size: 35px;
-    } */
     .header {
         display: block;
       }
