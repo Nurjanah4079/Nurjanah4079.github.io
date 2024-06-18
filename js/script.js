@@ -7,7 +7,6 @@ window.addEventListener("load", () =>{
         document.querySelector(".page-loader").style.display = "none";
     },600);
 });
-
 /* ------------------ Toggle Navbar ----------------------------------------- */
 const navToggler = document.querySelector(".nav-toggler");
 navToggler.addEventListener("click", () =>{
@@ -44,9 +43,6 @@ document.addEventListener("click", (e) =>{
         },500);
     }
 })
-
-
-
 /* -------------- About Tabs ---------------------- */
 const tabsContainer = document.querySelector(".about-tabs"),
 aboutSection = document.querySelector(".about-section");
@@ -61,7 +57,6 @@ tabsContainer.addEventListener("click", (e) => {
         aboutSection.querySelector(target).classList.add("active");
     }
 });
-
 /* --------------- Portfolio Item Details Popup -------------------------*/
 document.addEventListener("click", (e) =>{
     if(e.target.classList.contains("view-project-btn")){
@@ -76,8 +71,6 @@ function togglePortfolioPopup(){
     document.querySelector(".main").classList.toggle("fade-out");
 }
 document.querySelector(".pp-close").addEventListener("click", togglePortfolioPopup);
-
-// hide popup when clicking aoutside of it 
 document.addEventListener("click", (e) => {
     if(e.target.classList.contains("pp-inner")){
         togglePortfolioPopup();
@@ -85,32 +78,15 @@ document.addEventListener("click", (e) => {
 });
 
 function portfolioItemDetails(portfolioItem){
-    // document.querySelector(".pp-thumbnail img").src = 
-    // portfolioItem.querySelector(".portfolio-item-thumbnail img").src;
-
     document.querySelector(".pp-header h3").innerHTML = 
     portfolioItem.querySelector(".portfolio-item-title").innerHTML;
 
     document.querySelector(".pp-body").innerHTML = 
     portfolioItem.querySelector(".portfolio-item-details").innerHTML;
 }
-/* --------------- Slide Role -------------------------*/
-// var typed = new typed(".text", {
-//     String:["Business Intelligence", "Data Analyst", "Data Engineer"],
-//     typeSpeed:100,
-//     backSpeed:100,
-//     backDelay:1000,
-//     loop:true
-// });
-// const text = document.querySelector(".sec-text");
-// const textLoad = () =>{
-//     setTimeout(() => {
-//         text.textContent = "Data Analyst";
-//     }, 0);
-//     setTimeout(() => {
-//         text.textContent = "Business Intelligence";
-//     }, 4000);
-//     setTimeout(() => {
-//         text.textContent = "Data Engineer";
-//     }, 8000);
-// }
+var divElement = document.getElementById('viz1718291801250');                    
+var vizElement = divElement.getElementsByTagName('object')[0];                    
+vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    
+var scriptElement = document.createElement('script');                    
+scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                   
+vizElement.parentNode.insertBefore(scriptElement, vizElement);  
