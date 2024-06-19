@@ -1,497 +1,429 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title> Nurjanah Website </title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/font-awesome.css">
-  <link rel="stylesheet" href="css/style.css">
-  <title>Nurjanah Website</title>
-  <link rel="icon" href="img/myprofile-img.png" type="image/png">
-</head>
-<body>
-  <div class="page-loader">
-    <div></div>
-    <div></div>
-    <div></div>
-  </div>
-<div class="bg-circles">
-  <div class="circle-1"></div>
-  <div class="circle-2"></div>
-  <div class="circle-3"></div>
-  <div class="circle-4"></div>
-</div>
-<div class="overlay">
-</div>
-<div class="main hidden">
-  <header class="header">
-    <div class="container">
-      <div class="row flex-end">
-        <button type="button" class="nav-toggler">
-          <span></span>
-        </button>
-        <nav class="__nav">
-          <div class="nav-inner">
-            <ul>
-              <li><a href="#home" class="nav-item link-item">home</a></li>
-              <li><a href="#about" class="nav-item link-item ">about</a></li>
-              <li><a href="#portfolio" class="nav-item link-item">portfolio</a></li>
-              <li><a href="#contact" class="nav-item link-item">contact</a></li>
-            </ul>
-          </div>
-        </nav>
-      </div>
-    </div>
-  </header>
-  <section class="home-section align-items-center" id="home"> 
-    <div class="container">
 
-        <div class="home-text">
-          <div class="img-box">
-            <img src="img/myprofile-img.png" alt="image-png" loading="lazy">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Nurjanah Website</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link rel="icon" href="assets/img/myprofile-img.png" type="image/png">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: MyResume
+  * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
+  * Updated: Jun 14 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex flex-column justify-content-center">
+
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i><span>Home</span></a></li>
+        <li><a href="#about"><i class="bi bi-person navicon"></i><span>About</span></a></li>
+        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i><span>Resume</span></a></li>
+        <li><a href="#portfolio"><i class="bi bi-images navicon"></i><span>Portfolio</span></a></li>
+        <li><a href="#contact"><i class="bi bi-envelope navicon"></i><span>Contact</span></a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+
+    
+      <!-- <div class="img-box">
+        <img src="assets/img/my.png" alt="image-png" loading="lazy">
+      </div> -->
+
+      <div class="container" data-aos="zoom-out">
+        <div class="row align-items-center">
+          <!-- <div class="col-lg-9"> -->
+          <div class="col-12">
+            <img src="assets/img/myprofile-img.png" alt="image-png" loading="lazy">
+            <p>Hello, I'm</p>
+            <h2>Nurjanah</h2>
+            <p><span class="typed" data-typed-items="Business Intelligence, Data Analyst, Data Engineer">Business Intelligence</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+            <div class="social-links">
+              <a href=""><i class="bi bi-linkedin"></i></a>
+              <a href=""><i class="bi bi-github"></i></a>
+              <a href=""><i class="bi bi-youtube"></i></a>
+            </div>
           </div>
-          <p>Hello, I'm</p>
-          <h1>Nurjanah</h1>
-          <h2>Business Intelligence • Data Analyst • Data Engineer</h2>
-          <a href="#about" class="btn link-item">more about me</a>
-          <a href="#portfolio" class="btn link-item">portofolio</a>
-        </div>
-    </div>
-  </section>
-  </section>
-  <section class="about-section sec-padding" id="about">
-    <div class="container">
-      <div class="row">
-        <div class="section-title">
-          <h2>about me</h2>
         </div>
       </div>
-      <div class="row">
-        <div class="about-img">
-          <div class="img-box">
-            <img src="img/myabout-img.PNG" alt="about img">
-          </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>About Me</h2>
+        <div class="img-box">
+          <img src="assets/img/myabout-img.png" alt="about img">
         </div>
+        <p>Hey there! I'm a fresh grad in Informatics Engineering, all geared up to tackle tech challenges and spark innovation. I've got a solid grip on programming for data and web development, and I've dived into projects like Data Analysis and Data Warehousing. My journey includes being active in student orgs, assisting as a lecturer, interning as a web developer and business intelligence analyst, and training as a data engineer and analyst. I'm all about teamwork, resilience, and dedication. Ready to make a difference? Hire Me!</p>
+      
         <div class="about-text">
-          <p>Hey there! I'm a fresh grad in Informatics Engineering, all geared up to tackle tech challenges and spark innovation. I've got a solid grip on programming for data and web development, and I've dived into projects like Data Analysis and Data Warehousing. My journey includes being active in student orgs, assisting as a lecturer, interning as a web developer and business intelligence analyst, and training as a data engineer and analyst. I'm all about teamwork, resilience, and dedication. Ready to make a difference? Hire Me!</p>
           <div class="about-tabs">
             <button type="button" class="tab-item active" data-target="#education"></button>
             <button type="button" class="tab-item" data-target="#experience"></button>
           </div>
+      
           <a href="#contact" class="btn link-item">contact me</a>
-          <a href="img/Nurjanah - CV.pdf" class="btn" download>download CV</a>
-        </div>     
-      </div>
-    </div>
-  </section>
-  <section class="portfolio-section sec-padding" id="portfolio">
-    <div class="container">
-      <div class="row">
-        <div class="section-title">
-          <h2>recent work</h2>
+          <a href="assets/img/Nurjanah - CV.pdf" class="btn" download>download Resume</a>
         </div>
-      </div>
-      <div class="row">
-        <div class="portfolio-item">
-          <div class="portfolio-item-thumbnail">
-            <img src="img/portfolio/Adventureworks-Sales.JPG" alt="portfolio item thumbnail" loading="lazy">
-          </div>
-          <h4 class="portfolio-item-title">AdventureWorks Sales</h4>
-          <button type="button" class="btn view-project-btn">view project</button>
-          <div class="portfolio-item-details">
-            <div class="description">
-            </div>
-              <div class="description">
-                <div class="iframe-container">
-                  <iframe title="AdventureWorks" width="845" height="450" src="https://app.powerbi.com/view?r=eyJrIjoiZWExNmQ1ZTItM2ZiNi00OTgzLWIxNDEtNmQ0ZGQ0MTA0NjJkIiwidCI6IjM3NTA2OTdkLTI5ZTItNDQ1ZC1hZmU5LTE5ZWE3YzlkYTEyNCIsImMiOjEwfQ%3D%3D&embedImagePlaceholder=true" frameborder="0" allowFullScreen="true"></iframe>
-                </div>
-                </div> 
-              <div class="description">
-                <span><a href="https://app.powerbi.com/view?r=eyJrIjoiZWExNmQ1ZTItM2ZiNi00OTgzLWIxNDEtNmQ0ZGQ0MTA0NjJkIiwidCI6IjM3NTA2OTdkLTI5ZTItNDQ1ZC1hZmU5LTE5ZWE3YzlkYTEyNCIsImMiOjEwfQ%3D%3D">Access the dashboard here</a></span>
-              </div>
-              <div class="description">
-                <h2>Introduction</h2>
-                <p>This project is an interactive report created using Power BI to analyze and visualize sales data from AdventureWorks. AdventureWorks is a fictional company often used for training and demonstrating business analytics software. This report is designed to help stakeholders understand various aspects of the company's sales, from a high-level summary to detailed analyses based on different criteria. The report is divided into four first menus, each containing several second menus, providing a comprehensive and interactive view of sales data.</p>
-              </div>
-              <div class="description">
-                <h2>Menu Sales</h2>
-                <p>This menu provides information and analysis related to overall sales. It contains four sub-menus:</p>
-                <ul>
-                  <li>Sales Summary: Presents a summary of sales, including total sales, number of transactions, and key performance metrics. This visualization offers an overview of overall sales performance.</li>
-                  <li>Sales Calendar/Sales Heatmap: Displays sales by calendar, using a heatmap to show daily, weekly, or monthly sales patterns. This helps identify seasonal trends and peak or low sales days.</li>
-                  <li>Trend Analysis: Provides trend analysis of sales over time. This visualization helps understand how sales have changed over time and identify significant patterns or trends.</li>
-                  <li>YoY Analysis (Year-over-Year): Compares the current year's sales performance with previous years. This analysis is useful for seeing year-over-year growth or decline in sales.</li>
-                </ul>
-              </div>
-              <div class="description">
-              </div>
-              <div class="description">
-                <h2>Menu Product</h2>
-                <p>This menu focuses on sales analysis based on products. It contains three sub-menus:</p>
-                <ul>
-                  <li>Pareto Analysis: Utilizes the Pareto Principle to identify the products that contribute the most to total sales. This analysis helps determine which products are most important to focus on.</li>
-                  <li>Correlation: Analyzes the correlation between various products and other factors influencing sales. This visualization helps understand the relationships between products and other variables.</li>
-                  <li>Remove Week Off and etc to align the dataset with the calendar to accurately represent workdays and facilitate date-based analysis.</li>
-                </ul>
-              </div>
-              <div class="description">
-                <h2>Menu Internet</h2>
-                <p>This menu analyzes sales data conducted through internet channels. It contains four sub-menus:</p>
-                <ul>
-                  <li>RFM Analysis (Recency, Frequency, Monetary): Analyzes customer behavior based on how recently they made a purchase (Recency), how often they purchase (Frequency), and how much they spend (Monetary). This analysis helps in customer segmentation and planning more effective marketing campaigns.                  </li>
-                  <li>Decomposition: Provides decomposition analysis of sales to understand the contribution of various factors such as seasonality, trends, and noise. This helps separate the factors influencing sales.</li>
-                  <li>Maps: Displays sales based on geographic location. This visualization helps understand the geographical distribution of sales and identify high or low-performing areas.</li>
-                  <li>Customer Inquiry: Provides a tool for querying customer data based on specific criteria. This allows for deeper analysis of customer behavior and preferences.</li>
-                </ul>
-              </div>
-              <div class="description">
-                <h2>Menu Reseller</h2>
-                <p>This menu focuses on sales analysis based on products. It contains three sub-menus:</p>
-                <ul>
-                  <li>P/L Analysis (Profit and Loss Analysis): Analyzes the profit and loss from sales conducted through resellers. This helps understand the contribution of resellers to the company's profits.</li>
-                  <li>Maps: Displays reseller sales based on geographic location. This visualization helps understand the distribution of resellers and their performance in various regions.</li>
-                  <li>Reseller Inquiry: Provides a tool for querying reseller data based on specific criteria. This allows for deeper analysis of reseller performance and business relationships.</li>
-                </ul>
-              </div>
-              <div class="description">
-                <h2>Project Objectives</h2>
-                <p>The goal of this project is to provide in-depth and easily understandable insights into AdventureWorks' sales through various visualizations and analyses. With this interactive report, users can:</p>
-                <ul>
-                  <li>Understand overall and detailed sales performance based on time, product, sales channel, and resellers.</li>
-                  <li>Identify trends, patterns, and anomalies in sales data.</li>
-                  <li>Determine the most profitable products and geographical areas.</li>
-                  <li>Analyze customer and reseller behavior for better decision-making.</li>
-                  <li>Assist management in planning more effective marketing and sales strategies.</li>
-                </ul><br>
-              </div> 
-          </div>
-        </div>
-        <div class="portfolio-item">
-          <div class="portfolio-item-thumbnail">
-            <img src="img/portfolio/project-employee-presence-analysis.JPG" alt="portfolio item thumbnail" loading="lazy">
-          </div>
-          <h4 class="portfolio-item-title">Employee Presence Analysis</h4>
-          <button type="button" class="btn view-project-btn">view project</button>
-          <div class="portfolio-item-details">
-            <div class="description">
-              <div class="iframe-container">
-                <iframe title="HR Analytics - Employee Presence Analysis" width="845" height="450" src="https://app.powerbi.com/view?r=eyJrIjoiZTUxMDQwOGQtOTRlNi00Y2FlLTgxMWYtMDRjMWMwOGRhNTE0IiwidCI6IjM3NTA2OTdkLTI5ZTItNDQ1ZC1hZmU5LTE5ZWE3YzlkYTEyNCIsImMiOjEwfQ%3D%3D" frameborder="0" allowFullScreen="true"></iframe>           
-              </div>
-               </div> 
-               <div class="description">
-                <span><a href="https://app.powerbi.com/view?r=eyJrIjoiZTUxMDQwOGQtOTRlNi00Y2FlLTgxMWYtMDRjMWMwOGRhNTE0IiwidCI6IjM3NTA2OTdkLTI5ZTItNDQ1ZC1hZmU5LTE5ZWE3YzlkYTEyNCIsImMiOjEwfQ%3D%3D">Access the dashboard here</a></span>
-              </div>
-              <div class="description">
-                <h2>Background Case</h2>
-                <p>HR manager faces challenges in managing and understanding employee attendance data in his company. Previously, this process involved manual processing of complex and large Excel files, causing complexity and high time consumption. HR manager aims to enhance efficiency and understanding by adopting a data dashboard to analyze employee attendance, work-from-home trends, and sick leave percentages.</p>
-              </div>
-              <div class="description">
-                <h2>Source Data</h2>
-                <p>The primary data source is Excel file obtained from a dataset for employee attendance from a company named AtliQ. The data includes information on employee attendance, including attendance percentages, work-from-home habits, sick leave, and more.</p>
-              </div>
-              <div class="description">
-              </div>
-              <div class="description">
-                <h2>Data Transformation</h2>
-                <ul>
-                  <li>Extracting relevant fields such as employee names, presence, work-from-home, and sick leave information for focused analysis.</li>
-                  <li>Integrating additional data points, including dates, days of the week, and specific employee details, to enhance the granularity of the dataset.</li>
-                  <li>Add calculated fields for metrics such as attendance percentage (presence, work-from-home, and sick leave), enabling a deeper understanding of employee attendance dynamics.</li>
-                  <li>Remove Week Off and etc to align the dataset with the calendar to accurately represent workdays and facilitate date-based analysis.</li>
-                </ul>
-              </div>
-              <div class="description">
-                <h2>Tools</h2>
-                <div class="tools">
-                  <img src="img/tools/powerBI.png" alt="" loading="lazy">
-                  <img src="img/tools/sharePoint.png" alt="" loading="lazy">
-                  <img src="img/tools/powerAutomate.png" alt="" loading="lazy">
-                  <img src="img/tools/outlook.png" alt="" loading="lazy">
-                  <img src="img/tools/excel.png" alt="" loading="lazy">
-                </div>
-              </div>
-              <div class="description">
-                <h2>Dashboard</h2>
-                <ul>
-                  <li>Importing Excel data into Power BI starts the visualization process.</li>
-                  <li>Insights into presence, work-from-home, and sick leave patterns are delivered through visual cards and tables.</li>
-                  <li>Create interactive line charts to represent presence, work-from-home and sick leave trends.</li>
-                  <li>Bar charts are used to visually depict the percentage of presence, work-from-home, and sick leave by day.</li>
-                  <li>Create a calculated month-over-month.</li>
-                  <li>Create filter.</li>
-                </ul><br>
-              </div> 
-              <div class="description">
-                <h2>Automated Notifications and Updates</h2>
-                <ul>
-                  <li>Implement a system to send email notifications if the presence falls below 80%</li>
-                  <li>Set up automatic data updates, ensuring the dashboard reflects the latest information</li>
-                  <li>Incorporate notifications to alert stakeholders of data updates</li>
-                </ul>
-              </div>
-              <div class="description">
-                <h2>Insights</h2>
-                <ul>
-                  <li>Observe a decreasing trend in presence leading up to June</li>
-                  <li>Observe a increasing trend in work-from-home and sick leave leading up to June</li>
-                  <li>Highlighting employee presence based on specific days of the week, with Monday having the highest presence</li>
-                  <li>Highlighting employee work-from-home on specific days of the week, with Friday having the highest work-from-home</li>
-                  <li>Highlighting employee sick leave based on specific days of the week, with Monday having the highest sick leave</li>
-                  <li>Sending notifications via email if presence falls below 80%</li>
-                  <li>Automatic data updates, including notifications</li>
-                </ul>
-              </div>  
-              <div class="description">
-                <h2>Recommendations</h2>
-                <ul>
-                  <li>Recommend scheduling team activities on Mondays, a day with typically high employee attendance, to enhance collaboration.</li>
-                  <li>Enhance work flexibility by adopting a hybrid work model. Consider designating Fridays as remote work days, providing employees the flexibility to work from home. Additionally, explore rotating work models to optimize office space utilization.</li>
-                  <li>Utilize Fridays, characterized by lower attendance, for maintenance and infrastructure improvements without disrupting daily operations.</li>
-              </div>  
-          </div>
-        </div>
-        <div class="portfolio-item">
-          <div class="portfolio-item-thumbnail">
-            <img src="img/portfolio/Global-Economic-Indicator.JPG" alt="portfolio item thumbnail" loading="lazy">
-          </div>
-          <h4 class="portfolio-item-title">Global Economic Indicator</h4>
-          <button type="button" class="btn view-project-btn">view project</button>
-          <div class="portfolio-item-details">
-            <div class="description">
-              <div class="iframe-container">
-                <iframe title="Global Economic Indicator" src="https://app.powerbi.com/view?r=eyJrIjoiM2QyZmRkMjItN2ZmMS00MjQ3LTkxNTEtZDVhODJhNTZlMjU3IiwidCI6IjM3NTA2OTdkLTI5ZTItNDQ1ZC1hZmU5LTE5ZWE3YzlkYTEyNCIsImMiOjEwfQ%3D%3D" frameborder="0" allowFullScreen="true"></iframe>
-              </div>
-            </div> 
-            <div class="description">
-              <span><a href="https://app.powerbi.com/view?r=eyJrIjoiM2QyZmRkMjItN2ZmMS00MjQ3LTkxNTEtZDVhODJhNTZlMjU3IiwidCI6IjM3NTA2OTdkLTI5ZTItNDQ1ZC1hZmU5LTE5ZWE3YzlkYTEyNCIsImMiOjEwfQ%3D%3D">Access the dashboard here</a></span>
-            </div>
-            <div class="description">
-              <h2>Introduction</h2>
-              <p>The Global Economic Indicator Dashboard is an interactive data visualization project that provides a comprehensive overview of the world's economic landscape. This dashboard aims to facilitate informed decision-making by presenting key economic indicators, such as GDP, population growth, and regional economic performance.</p>
-            </div>
-            <div class="description">
-              <h2>Project Objectives</h2>
+      </div><!-- End Section Title -->    
+    </section><!-- /About Section -->
+
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Resume</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">Sumary</h3>
+
+            <div class="resume-item pb-0">
+              <h4>Nurjanah</h4>
               <ul>
-                <li>To design an interactive and user-friendly dashboard that enables users to explore and analyze global economic data with ease.</li>
-                <li>To provide a comprehensive overview of global economic indicators, including GDP, population growth, and regional economic performance.</li>
-                <li>To enable users to identify trends and patterns in global economic data, facilitating informed decision-making.</li>
-                <li>To offer a customizable and flexible platform that allows users to select specific countries, regions, or indicators for in-depth analysis.</li>
+                <li>Jakarta, 14320</li>
+                <li>(+62) 81223752835</li>
+                <li>nrjanah889@gmail.com</li>
               </ul>
-            </div>  
-          </div>
-        </div>
-        <div class="portfolio-item">
-          <div class="portfolio-item-thumbnail">
-            <img src="img/portfolio/BikeStores.JPG" alt="portfolio item thumbnail" loading="lazy">
-          </div>
-          <h4 class="portfolio-item-title">Bike Stores</h4>
-          <button type="button" class="btn view-project-btn">view project</button>
-          <div class="portfolio-item-details">
-            <div class="description">
-              <div class="iframe-container">
-                <iframe src="img/portfolio/BikeStores.pdf" frameborder="0"></iframe>
-              </div>
-            </div> 
-            <div class="description"> 
-              <span><a href="https://public.tableau.com/views/BikeStores_17182904078520/Dashboard1?:language=en-US&publish=yes&:sid=&:display_count=n&:origin=viz_share_link">Access the dashboard here</a></span>
-            </div>
-            <div class="description">
-              <h2>Project Description</h2>
-              <p>This project aims to develop a dynamic sales dashboard for the executive team of a retail company, specifically focusing on a fictional bike store dataset. The primary approach involves leveraging relevant data from the company's database using SQL and designing a well-structured, dynamic dashboard using Tableau..</p>
-              <br>
-              <p>The first step involves querying the company's relational database using SQL scripts to generate detailed datasets from the bike store's sales, inventory, and customer data. These datasets will provide all the necessary information required to compile a dynamic sales dashboard for the executive team.</p>
-              <br>
-              <p>Subsequently, I will import the generated datasets from SQL. These datasets will be linked to Tableau using Excel sheets containing SQL output data. Utilizing this data, the goal is to create a visually appealing and dynamic dashboard that effectively communicates sales performance metrics, inventory insights, customer trends, and other key metrics specific to the bike store.</p>
-              <br>
-              <p>This project is expected to provide added value by enhancing understanding of the bike store's sales performance and operational efficiency, supporting more informed decision-making by the executive team.</p>
-            </div>
-              
-          </div>
-        </div>
-        <div class="portfolio-item">
-          <div class="portfolio-item-thumbnail">
-            <img src="img/portfolio/project-ecommerce.JPG" alt="portfolio item thumbnail" loading="lazy">
-          </div>
-          <h4 class="portfolio-item-title">Ecommerce Sales Dashboard</h4>
-          <button type="button" class="btn view-project-btn">view project</button>
-          <div class="portfolio-item-details">
-            <div class="description">
-              <div class="iframe-container">
-                <iframe title="Ecommerce"width="845" height="450" src="https://app.powerbi.com/view?r=eyJrIjoiOGM0MGFjMjMtMjIyNy00ZTRkLWI3MzQtOTlmMGVkNTNhYTYzIiwidCI6IjM3NTA2OTdkLTI5ZTItNDQ1ZC1hZmU5LTE5ZWE3YzlkYTEyNCIsImMiOjEwfQ%3D%3D" frameborder="0" allowFullScreen="true"></iframe>        
-              </div>
-          </div> 
-          <div class="description">
-            <span><a href="https://app.powerbi.com/view?r=eyJrIjoiOGM0MGFjMjMtMjIyNy00ZTRkLWI3MzQtOTlmMGVkNTNhYTYzIiwidCI6IjM3NTA2OTdkLTI5ZTItNDQ1ZC1hZmU5LTE5ZWE3YzlkYTEyNCIsImMiOjEwfQ%3D%3D">Access the dashboard here</a></span>
-          </div>
-          <div class="description">
-              <h2>Introduction</h2>
-              <p>This dashboard is designed to provide a comprehensive overview of key business metrics for an ecommerce business. The dashboard is organized into several categories, including Sales Performance, Sales by Category, Sales by State, Top 5 Products by YTD Sales, Button 5 Products by YTD Sales, YTD Sales by Region, and YTD Sales by Shipping Type. The dashboard is intended for use by managers and decision-makers within the ecommerce business, providing a clear, concise, and actionable view of key sales data. This enables them to monitor overall business performance, identify trends and opportunities, optimize sales strategies, and improve operational efficiency.</p>
-          </div>
-          <div class="description">
-              <h2>Project Objectives</h2>
+            </div><!-- Edn Resume Item -->
+
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4>Bachelor's Degree in Informatics Engineering</h4>
+              <h5>2018 - 2022</h5>
+              <p><em>YARSI University - Jakarta, Indonesia</em></p>
               <ul>
-                <li>Enhance visibility into key sales metrics.</li>
-                <li>Facilitate data-driven decision-making.</li>
-                <li>Identify growth opportunities and areas for improvement.</li>
-                <li>Empower managers to effectively monitor and optimize sales performance.</li>
-            </div>
+                <li>GPA of 3.79</li>
+                <li> Activity - Assistant, organization, and contest</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+            <div class="resume-item">
+              <h4>Data Analyst - Fresh Graduate Academy Digital Talent Scholarship KOMINFO</h4>
+              <h5>2022</h5>
+              <ul>
+                <li>Learn how to process and analyze data, use key analysis tools, apply R programming, and create visualizations that can inform key business decisions.</li>
+                <li>Included in the 500 fastest and best graduates in this program.</li>
+                <li>Tools/Framework Used: spreadsheet, SQL, R, dan Tableau.
+                </li>
+              </ul></div><!-- Edn Resume Item -->
+
+            <h3 class="resume-title">Organizational Experience</h3>
+            <div class="resume-item">
+              <h4>Treasurer in the education departement</h4>
+              <h5>Oct 2019 - August 2021</h5>
+              <p><em>HIMFO - Jakarta, Indonesia</em></p>
+              <ul>
+                <li>Managing finances, compiling periodic financial reports and bookkeeping in the education division.</li>
+                <li>Facilitate the financing needs of work programs in the education division.</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+            <h3 class="resume-title">Certification</h3>
+            <div class="resume-item">
+              <!-- <h4></h4> -->
+              <ul>
+                <li><span><a href="https://learn.microsoft.com/en-us/users/Nurjanah-9855/credentials/5CA2CCE67CCCDFCA">Microsoft Certified: Power BI Data Analyst Associate  </a></span></li>
+                <li><span><a href="https://learn.microsoft.com/api/credentials/share/en-us/Nurjanah-9855/636E86B8FF1F3023?sharingId=D4465A58344C89F6">Microsoft Certified: Azure Data Fundamentals   </a></span></li>
+                <li><span><a href="https://www.credly.com/badges/be567825-7aef-4388-a2fd-0dedbcbf1f2d/linked_in_profile">Google Professional Data Analytics Certificate – Coursera </a></span></li>
+                <li><span><a href="https://www.coursera.org/account/accomplishments/professional-cert/WRHHYMKR8VNV">Google Advanced Data Analytics Certificate – Coursera </a></span></li>
+                <li><span><a href="https://drive.google.com/drive/folders/1JwsEqpu7RZS4eOUTHaXHI98unD4L7ICv">More</a></span></li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
           </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="resume-title">Professional Experience</h3>
+            <div class="resume-item">
+              <h4>Business Intelligence Analyst – Internship & Hackathon</h4>
+              <h5>Jul 2023 – Nov 2023</h5>
+              <p><em>Indosat Ooredoo Hutchison - Jakarta, Indonesia</em></p>
+              <ul>
+                <li>Training in technology: AI & Machine Learning, RPA (Automation), and Java Fullstack.</li>
+                <li>Develop a machine learning model to identify the important variables influencing sales performance and enablesales performance time series forecasting.</li>
+                <li>Created real-time interactive dashboards for sales performance.</li>
+                <li>Build an unattended robot for periodic data updates.</li>
+                <li>Tools/Framework Used: Power BI, Python, Machine Learning, IBM RPA, and Microsoft 365.</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+            <div class="resume-item">
+              <h4>Data Engineer - DataFellowship Program</h4>
+              <h5>Nov 2022 – Mar 2023</h5>
+              <p><em>IYKRA - Jakarta, Indonesia</em></p>
+              <ul>
+                <li>Weekly practice case and task to implement your knowledge and understand by practical application.</li>
+                <li>Build a project end-to-end data pipeline of online transactions fraud detections.</li>
+                <li>Won the award as a participant with the most persistence.</li>
+                <li>Tools/Framework Used: GCP, docker, airflow, kafka, Spark, Avro, DBT and Looker Studio.</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+            <div class="resume-item">
+              <h4>Web Developer Internship</h4>
+              <h5>Apr 2021 - June 2021</h5>
+              <p><em>RSGM YARSI - Jakarta, Indonesia</em></p>
+              <ul>
+                <li>Developing a medical record system web system, analyzed requirements to determine the best approach fordeveloping new features or improving existing functionality. </li>
+                <li>Communicate with other team members regarding project status and issues that arise.</li>
+                <li>Succeeded in fixing, and increasing the functionality of several features to make it more effective</li>
+                <li>Tools/Framework Used: PHP, JavaScript, HTML, MySQL.</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+            <div class="resume-item">
+              <h4>Lecturer Asisstant of Database Courses</h4>
+              <h5>Sep 2019 - Jan 2020</h5>
+              <p><em>Faculty of Information Technology YARSI University - Jakarta, Indonesia</em></p>
+              <ul>
+                <li>Teaching, mentoring and grading and help resolve my junior's problem.</li>
+                <li>Successfully handled 200+ my junior's as participants of this course.</li>
+                <li>Tools/Framework Used: MySQL, Oracle, Microsoft PowerPoint, and Microsoft Excel.</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+          </div>
+
         </div>
-        <div class="portfolio-item">
-          <div class="portfolio-item-thumbnail">
-            <img src="img/portfolio/project-fns.JPG" alt="portfolio item thumbnail" loading="lazy">
-          </div>
-          <h4 class="portfolio-item-title">Dashboard Online Transaction Fraud Detection</h4>
-          <button type="button" class="btn view-project-btn">view project</button>
-          <div class="portfolio-item-details">
-            <div class="description">
-              <div class="iframe-container">
-                <iframe height="1000" src="https://lookerstudio.google.com/embed/reporting/5774d900-c104-4251-baa0-cccf1aa32467/page/B26AD" frameborder="0" style="border:0" allowfullscreen sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"></iframe>
-            </div>
-            <div class="description">
-              <span><a href="https://lookerstudio.google.com/s/rM3bZrSawng">Access the dashboard here</a></span>
-            </div>
-            </div>
-              <div class="description">
-                <h2>Problem Statement</h2>
-                <p>User want us to create a Sales Dashboard showing information of YTD Sales and generate insight for below scenarios</p>
-                <ul>
-                  <li>Create a KPI Banner showing YTD Sales, YTD Profit, YTD Quantity sold, YTD Profit Margin</li>
-                  <li>Find Year on Year growth for each KPI and show a YTD sparkline for each measure in the KPI to understand the monthly trend for each fact</li>
-                  <li>Find YTD Sales, PYTD Sales, YoY Sales growth for diffreent customer category, Add a trend icon for each State</li>
-                  <li>Find YTD Sales Performance by each State</li>
-                  <li>Top 5 and Botton 5 Product by Sales</li>
-                  <li>YTD Sales by Revenue know best and worst performing region all over country</li>
-                  <li>YTD Sales by Shipping Type to get the best shipping type percentage/li>
-                </ul>
+
+      </div>
+
+    </section><!-- /Resume Section -->
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Portfolio</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+            <li data-filter="*" class="filter-active">All</li>
+            <!-- <li data-filter=".filter-app">App</li>
+            <li data-filter=".filter-product">Card</li>
+            <li data-filter=".filter-branding">Web</li> -->
+          </ul><!-- End Portfolio Filters -->
+
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src="assets/img/portfolio/Project-1-Adventureworks-Sales.JPG" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>AdventureWorks Sales</h4>
+                <a href="portfolio-1-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
-              <div class="description"> 
-                <span><a href="https://github.com/Nurjanah4079/Database-Pipeline-for-Online-Transactions-Fraud-Detections">Link Project</a></span>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src="assets/img/portfolio/Project-2-Global-Economic-Indicator.JPG" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Global Economic Indicator</h4>
+                <a href="portfolio-2-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
-          </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src="assets/img/portfolio/Project-3-employee-presence-analysis.JPG" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Employee Presence Analysis</h4>
+                <a href="portfolio-3-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src="assets/img/portfolio/Project-4-BikeStores.JPG" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Bike Stores</h4>
+                <a href="portfolio-4-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src="assets/img/portfolio/Project-5-ecommerce.JPG" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Ecommerce Sales Dashboard</h4>
+                <a href="portfolio-5-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src="assets/img/portfolio/Project-6-fns.JPG" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Dashboard Online Transaction Fraud Detectionp</h4>
+                <a href="portfolio-6-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src="assets/img/portfolio/Project-7-yellow-taxi.JPG" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Dashboard Yellow Taxi Trip</h4>
+                <a href="portfolio-7-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src="assets/img/portfolio/Project-8-WorldHappines.JPG" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>World Happiness</h4>
+                <a href="portfolio-8-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src="assets/img/portfolio/Project-9-Global CO2.JPG" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Global CO2 Emissions</h4>
+                <a href="portfolio-9-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+          </div><!-- End Portfolio Container -->
+
         </div>
-        <div class="portfolio-item">
-          <div class="portfolio-item-thumbnail">
-            <img src="img/portfolio/project-yellow-taxi.JPG" alt="portfolio item thumbnail" loading="lazy">
-          </div>
-          <h4 class="portfolio-item-title">Dashboard Yellow Taxi Trip</h4>
-          <button type="button" class="btn view-project-btn">view project</button>
-          <div class="portfolio-item-details">
-            <div class="description">
-              <div class="iframe-container">
-                <iframe src="https://lookerstudio.google.com/embed/reporting/dc4ade3d-1e66-4818-ab1a-6408c8abcd00/page/gg69C" frameborder="0" style="border:0" allowfullscreen sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"></iframe>            
+
+      </div>
+
+    </section><!-- /Portfolio Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+      <!-- End Section Title -->
+
+      <!-- <div class="container align-items-center" data-aos="fade" data-aos-delay="100" align> -->
+
+        <!-- <div class="row gy-4"> -->
+
+          <!-- <div class="col-lg-4"> -->
+            <div class="info-item d-flex flex-column align-items-center" data-aos="fade-up" data-aos-delay="200">
+              <i class="bi bi-geo-alt flex-shrink-0"></i>
+              <div>
+                <h3>Address</h3>
+                <p>Jakarta, Indonesia</p>
               </div>
+            </div><!-- End Info Item -->
+
+            <div class="info-item d-flex flex-column align-items-center" data-aos="fade-up" data-aos-delay="300">
+              <i class="bi bi-telephone flex-shrink-0"></i>
+              <div>
+                <h3>Call Us</h3>
+                <p>+62 81223752835</p>
               </div>
-              <div class="description">
-                <span><a href="https://datastudio.google.com/s/gQkqJGgqE9I">Access the dashboard here</a></span>
+            </div><!-- End Info Item -->
+
+            <div class="info-item d-flex flex-column align-items-center" data-aos="fade-up" data-aos-delay="400">
+              <i class="bi bi-envelope flex-shrink-0"></i>
+              <div>
+                <h3>Email Us</h3>
+                <p>nrjanah889@gmail.com</p>
               </div>
-              <div class="description">
-                <h2>Introduction</h2>
-                <p>The New York Yellow Taxi service is an iconic symbol of the city's transportation system, providing millions of rides to passengers every year. With the rise of ride-hailing services and changing transportation habits, it is essential to analyze the performance of the traditional taxi industry to identify areas of improvement and opportunities for growth. This report presents a comprehensive analysis of the New York Yellow Taxi service's performance in 2019, providing insights into key metrics, trends, and patterns.</p>
-            </div>
-            <div class="description">
-              <h2>Problem Statement</h2>
-                <p>The New York Yellow Taxi service faces increasing competition from ride-hailing services, leading to a decline in market share and revenue. To remain competitive, it is crucial to understand the current state of the industry, identify areas of improvement, and develop strategies to increase efficiency, reduce costs, and enhance the overall passenger experience. The lack of data-driven insights into the taxi industry's performance hinders the development of effective solutions to address these challenges.</p>
-            </div>
-            <div class="description">
-                <h2>Insight</h2>
-                <ul>
-                  <li>Total trips during 2019 reached 84.4 billion</li>
-                  <li>Total Distance in 2019 reached 255.2 billion</li>
-                  <li>Total Passengers in 2019 reached 131.2 billion</li>
-                  <li>Total revenue in 2019 reached 1.6 billion</li>
-                  <li>The average fare is 13.5k, while the maximum is 943.3k</li>
-                  <li>The longest decline occurred for three consecutive months starting from May to August</li>
-                  <li>The longest increase occurred during the two months from August to October.</li>
-                  <li>For a significant decrease occurred from January to February</li>
-                  <li>For a significant increase occurred in February to March</li>
-                  <li>Peak hours occur at 11 PM - 8 AM with the highest peak at 6 PM</li>
-                  <li>For the type of payment used the most are credit cards with a percentage of 71.8% and cash of 27.1%</li>
-                  <li>Meanwhile, for a comparison of payment types with additional income, it can be seen that the credit card type of additional income is dominated by tip_amount, while other types are dominated by extra</li>
-              </div>
-              <div class="description">
-                <span><a href="https://github.com/Nurjanah4079/dashboard-yellow-taxi-trip-2019">Link Project</a></span>
-              </div>
-          </div>
-        </div>
-        <div class="portfolio-item">
-          <div class="portfolio-item-thumbnail">
-              <img src="img/portfolio/WorldHappines.JPG" alt="portfolio item thumbnail" loading="lazy">
-          </div>
-          <h4 class="portfolio-item-title">World Happiness</h4>
-          <button type="button" class="btn view-project-btn">View Project</button>
-          <div class="portfolio-item-details">
-            <img src="img/portfolio/WorldHappines.JPG" alt="portfolio item thumbnail" loading="lazy">
-            <div class="description">
-              <span><a href="https://public.tableau.com/views/MyWorldHappinessDemo_16648583468010/Sheet2?:language=en-US&amp;:display_count=n&amp;:origin=viz_share_link">Access the dashboard here</a></span>
-            </div>
-              <div class="description">
-                  <h2>Project Description ppp</h2>
-                  <p>The report titled "My World Happiness Demo" uses a world map to visualize happiness scores across different countries. The report focuses on Europe and uses colors to denote the happiness score for each country. The countries in Europe with higher happiness scores are displayed in shades of blue, while countries with lower happiness scores are depicted in shades of green. The report aims to visually represent the happiness index across Europe. It is worth noting that the data for this report is incomplete, as only countries in Europe and Asia are represented on the map. The report could be improved by including data from all countries in the world for a more complete understanding of global happiness.</p>
-              </div>
-          </div>
-        </div>
-        <div class="portfolio-item">
-          <div class="portfolio-item-thumbnail">
-            <img src="img/portfolio/Global CO2.JPG" alt="portfolio item thumbnail" loading="lazy">
-          </div>
-          <h4 class="portfolio-item-title">Global CO2 Emissions</h4>
-          <button type="button" class="btn view-project-btn">view project</button>
-          <div class="portfolio-item-details">
-            <img src="img/portfolio/Global CO2.JPG" alt="portfolio item thumbnail" loading="lazy">
-                <div class="description">
-                  <span><a href="https://public.tableau.com/views/GlobalCO2Emissions_16648599560790/Sheet2?:language=en-US&:sid=&:display_count=n&:origin=viz_share_link">Access the dashboard here</a></span>
-                </div>
-                <div class="description">
-                  <h2>Project Deskription</h2>
-                    <p>The report "Global CO2 Emissions" analyzes and visualizes CO2 emissions per capita across different regions, including Africa Sub-Sahara, Latin America and Caribbean Islands, North America, South Asia, East Asia and Pacific, and Europe and Middle East, providing a comprehensive overview of global CO2 emissions and their regional disparities.</p>
-                </div>
-          </div>          
-        </div>
-    </div>
-  </section>
-  <section class="contact-section sec-padding" id="contact">
+            </div><!-- End Info Item -->
+
+          <!-- </div> -->
+
+        
+
+        <!-- </div> -->
+      </div>
+      <!-- </div> -->
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer position-relative">
     <div class="container">
-      <div class="row">
-        <div class="section-title">
-          <h2>contact me</h2>
-        </div>
+      <h3 class="sitename">Nurjanah</h3>
+      <div class="social-links d-flex justify-content-center">
+        <a href="https://www.linkedin.com/in/nurjanaah/"><i class="bi bi-linkedin"></i></a>
+        <a href="https://github.com/Nurjanah4079"><i class="bi bi-github"></i></a>
+        <a href="https://www.youtube.com/channel/UC0bl5p7CH7iLQjXWE_UVz9Q"><i class="bi bi-youtube"></i></a>
       </div>
-      <div class="row">
-        <div class="contact-info">
-          <div class="contact-info-item">
-            <h3>Email</h3>
-            <p>nrjanah889@gmail.com</p>
-          </div>
-          <div class="contact-info-item">
-            <h3>find me</h3>
-            <div class="social-links">
-              <a href="https://www.linkedin.com/in/nurjanaah/" target="_blank"><i class="fab fa-linkedin"></i></a>
-              <a href="https://github.com/Nurjanah4079" target="_blank"><i class="fab fa-github"></i></a>
-              <a href="https://www.youtube.com/channel/UC0bl5p7CH7iLQjXWE_UVz9Q" target="_blank"><i class="fab fa-youtube"></i></a>          
-            </div>
-          </div>
+      <div class="container">
+        <div class="copyright">
+          <span>Copyright 2024</span>
+        </div>
+        <div class="credits">
         </div>
       </div>
     </div>
-  </section>
-</div>
-<div class="portfolio-popup">
-  <div class="pp-inner">
-    <div class="pp-content">
-        <button type="button" class="btn pp-close"><i class="fas fa-times"></i></button>
-      <div class="pp-header">
-        <div class="pp-thumbnail">
-        </div>
-        <h3></h3>
-        <h5></h5>
-      </div>
-      <div class="pp-body">
-      </div>
-    </div>
-  </div>
-</div>
-<script src="js/script.js">
-</script>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
 </body>
+
 </html>
