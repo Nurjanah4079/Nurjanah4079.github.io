@@ -651,7 +651,7 @@ button{
   color: var(--default-color);
 }
 .about-text{
-  padding: 40px 0 140px 0;
+  padding: 40px 0 160px 0;
 }
 /*--------------------------------------------------------------
 # Skills Section
@@ -1200,10 +1200,14 @@ button{
 /*--------------------------------------------------------------
 # Portfolio Details Section
 --------------------------------------------------------------*/
-.portfolio-details .portfolio-details-slider img {
+.portfolio-details .portfolio-details-slider iframe {
   width: 100%;
 }
 
+iframe{
+  width: 100%;
+  height: 800px;
+}
 .portfolio-details .swiper-wrapper {
   height: auto;
 }
@@ -1239,6 +1243,7 @@ button{
   .portfolio-details .swiper-button-next {
     display: none;
   }
+
 }
 
 .portfolio-details .swiper-pagination {
@@ -1371,7 +1376,33 @@ button{
   margin: 0 0 15px 0 0 0;
   padding: 0;
 }
-
+/*------add new display portfolio------------*/
+.info-portfolio {
+  text-align: center;
+  padding-bottom: 15px;
+}
+.info-portfolio .info-image{
+  border-radius: 20%;
+}
+.filter-app.portfolio-item {
+  position: absolute;
+  padding: 15px 15px 15px 15px;
+  border-radius: 10%;
+}
+.filter-app.portfolio-item img{
+  padding: 20px 25px 15px 25px;
+  border-radius: 12%;
+}
+.filter-app.portfolio-item h5{
+  padding: 0 10px 0 10px;
+}
+.info-item-portfolio{
+  background-color: var(--contrast-color);
+  border-radius: 10%;
+  padding: 15px 15px 15px 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
 /*--------------------------------------------------------------
 # Service Details Section
 --------------------------------------------------------------*/
