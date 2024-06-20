@@ -476,7 +476,7 @@ section,
 .img-box img{
   width: 200px;
   height: 200px;
-  margin: 0 auto 20px;
+  margin: 0 auto 0px;
 }
 .hero h2 {
   margin: 0;
@@ -651,7 +651,10 @@ button{
   color: var(--default-color);
 }
 .about-text{
-  padding: 40px 0 160px 0;
+  padding: 0px 0 160px 0;
+}
+.about-text p{
+  padding: 2% 18% 0 18%;
 }
 /*--------------------------------------------------------------
 # Skills Section
